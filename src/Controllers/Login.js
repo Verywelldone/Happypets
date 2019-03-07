@@ -42,6 +42,7 @@ class Login extends Component {
       submitForm(e) {
         e.preventDefault();
         console.log(`Email: ${ this.state.email }`)
+        console.log(`Password: ${ this.state.password}`)
       }
     
       
@@ -88,6 +89,7 @@ class Login extends Component {
                     onChange={ (e) => this.handleChange(e) }
                 />
                 </FormGroup>
+                <Button>Submit</Button>
               </Col>
           </Form>
           </Container>
