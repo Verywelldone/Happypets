@@ -51,7 +51,7 @@ class Login extends Component {
 
       LogIn(){
           const { email, password } = this.state;
-          if(email == "test@test.com" && password == "1234"){
+          if(email === "test@test.com" && password === "1234"){
             const  path ="/logged";
 
             this.props.history.push(path); 
