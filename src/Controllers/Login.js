@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Logout from "./Logout";
 
 import {
   Container, Col, Form,
@@ -17,6 +18,7 @@ class Login extends Component {
           },
         }
         this.handleChange = this.handleChange.bind(this);
+        this.redirect = this.redirect.bind(this);
       }
     
       validateEmail(e) {
@@ -45,10 +47,25 @@ class Login extends Component {
         console.log(`Password: ${ this.state.password}`)
       }
     
+
+        redirect(){
+          const { email, password } = this.state;
+          if(email == "test@test.com" && password == "1234"){
+            const  path ="/logged";
+
+            this.props.history.push(path); 
+          }else {
+            const  path ="/logout";
+
+            this.props.history.push(path);
+          }
+    
+        }
       
       render() {
         const { email, password } = this.state;
-        return (
+     
+     return (
           <Container className="App">
             <h2>Sign In</h2>
             <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
@@ -72,7 +89,7 @@ class Login extends Component {
                     That's a tasty looking email you've got there.
                   </FormFeedback>
                   <FormFeedback>
-                    Uh oh! Looks like there is an issue with your email. Please input a correct email.
+                  Email-ul nu este valid.
                   </FormFeedback>
                   <FormText>Your username is most likely your email.</FormText>
                 </FormGroup>
@@ -89,7 +106,7 @@ class Login extends Component {
                     onChange={ (e) => this.handleChange(e) }
                 />
                 </FormGroup>
-                <Button>Submit</Button>
+                <Button onClick={this.redirect}>Submit</Button>
               </Col>
           </Form>
           </Container>

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Login from "./Controllers/Login.js"
 import './App.css';
+import Logout from "./Controllers/Logout"
+import PrimaPagina from "./Controllers/PrimaPagina"
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 
 class App extends Component {
@@ -8,10 +14,22 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-
-            <Login/>
+       
+        <Router>
+        <div>
+          <hr />
+          <Switch>
+              <Route exact path='/' component={Login} />
+              <Route  exact path='/logout' component={Logout} />
+              <Route  exact path='/Logged' component={PrimaPagina} />
+          </Switch>
+          
+        </div>
+        
       
-        </header>
+      </Router>
+          
+          </header>
       </div>
     );
   }
