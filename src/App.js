@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Login from "./Controllers/Login.js"
 import './App.css';
-import Logout from "./Controllers/Logout"
+
+import Login from "./Controllers/Login.js"
+import Register from "./Controllers/Register"
 import PrimaPagina from "./Controllers/PrimaPagina"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,8 +21,9 @@ class App extends Component {
           <hr />
           <Switch>
               <Route exact path='/' component={Login} />
-              <Route  exact path='/logout' component={Logout} />
               <Route  exact path='/Logged' component={PrimaPagina} />
+              <Route  exact path='/Register' component={Register} />
+              
           </Switch>
           
         </div>

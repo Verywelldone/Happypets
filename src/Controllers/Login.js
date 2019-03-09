@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logout from "./Logout";
+
 
 import {
   Container, Col, Form,
@@ -18,7 +18,8 @@ class Login extends Component {
           },
         }
         this.handleChange = this.handleChange.bind(this);
-        this.redirect = this.redirect.bind(this);
+        this.LogIn = this.LogIn.bind(this);
+        this.Register = this.Register.bind(this);
       }
     
       validateEmail(e) {
@@ -48,20 +49,25 @@ class Login extends Component {
       }
     
 
-        redirect(){
+      LogIn(){
           const { email, password } = this.state;
           if(email == "test@test.com" && password == "1234"){
             const  path ="/logged";
 
             this.props.history.push(path); 
           }else {
-            const  path ="/logout";
+            const  path ="/Register";
 
             this.props.history.push(path);
           }
     
         }
       
+        Register(){
+            const  path ="/Register";
+            this.props.history.push(path); 
+        }
+
       render() {
         const { email, password } = this.state;
      
@@ -106,7 +112,8 @@ class Login extends Component {
                     onChange={ (e) => this.handleChange(e) }
                 />
                 </FormGroup>
-                <Button onClick={this.redirect}>Submit</Button>
+                <Button onClick={this.LogIn}>LogIn</Button>
+                <Button onClick={this.Register}>Register</Button>
               </Col>
           </Form>
           </Container>
