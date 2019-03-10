@@ -13,6 +13,7 @@ class PrimaPagina extends Component {
         const path ="/hostPage";
         this.props.history.push(path);  //nu reusecs sa deschid path-ul
     }
+    
     clientPage(){
         const path ="/clientPage";
         this.props.history.push(path);  //nu reusecs sa deschid path-ul

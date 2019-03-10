@@ -55,8 +55,8 @@ class Login extends Component {
 
             this.props.history.push(path); 
           }else {
-            const  path ="/Register";
-
+            const  path ="/";
+                {alert("User sau email invalid");}
             this.props.history.push(path);
           }
     
