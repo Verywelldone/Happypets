@@ -1,5 +1,6 @@
 import React, {Component} from  "react";
-import {Button} from "reactstrap"
+import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap'
+
 
 
 class Register extends Component {
@@ -18,23 +19,41 @@ class Register extends Component {
     
     render(){
 
-        
-
         return(
             
             <div id="primaPagina">
-                <form action="">
-                          Email
-                         <br/> <input type="email" placeholder = "email" name="email" id=""/>
-                        <br/>
-                      Password 
-                       <input type="password" name="password" id=""/>
-                
-                      <br/> 
+            <Col><h2>Register for a Happy Puppy</h2></Col>
+                <Form>
+                    <Col>
+                        <FormGroup>
+                            <Label for="name">Your name:</Label>
+                            <Input type="text" placeholder = "First and last name" name="name" id=""/>
+                        </FormGroup>
+                    </Col>
+                    <Col>
+                        <FormGroup>
+                            <Label for="address">Your address:</Label>
+                            <Input type="text" placeholder = "Address here" name="name" id=""/>
+                        </FormGroup>
+                    </Col>
+                    <Col>
+                        <FormGroup>
+                            <Label for="email">Email:</Label>
+                            <Input type="email" placeholder = "email@email.com" name="email" id=""/>
+                        </FormGroup>
+                    </Col>
+                    <Col>
+                        <FormGroup>
+                            <Label for="password">Create a password:</Label>
+                            <Input type="password" name="password" id=""/>
+                        </FormGroup>
+                    </Col>
+                    <Col>
                       {/* apel path ^ */}
-                      <Button onClick={this.createAcount}>Register</Button> 
+                      <Button color="danger" size="lg" block onClick={this.createAcount}>Sign Up</Button> 
+                    </Col>
                       
-                </form>
+                </Form>
             </div>
         
        

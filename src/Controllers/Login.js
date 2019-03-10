@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import {
   Container, Col, Form,
   FormGroup, Label, Input,
@@ -112,8 +111,8 @@ class Login extends Component {
                     onChange={ (e) => this.handleChange(e) }
                 />
                 </FormGroup>
-                <Button onClick={this.LogIn}>LogIn</Button>
-                <Button onClick={this.Register}>Register</Button>
+                <Button color="warning" size="lg" block onClick={this.LogIn}>Sign In</Button>
+                <Button color="success" size="lg" block onClick={this.Register}>Sign Up</Button>
               </Col>
           </Form>
           </Container>
