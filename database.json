@@ -1,0 +1,28 @@
+{
+    "users":[
+        {
+            "id":"1",
+            "firstname":"Bogdan",
+            "lastName":"Fatu",
+            "email":"ionutbogdan11@gmail.com",
+            "password":"bogdan"
+        },
+
+        {
+            "id":"2",
+            "firstname":"Marius",
+            "lastName":"Vraja",
+            "email":"ionutbogdan11@gmail.com",
+            "password":"marius"
+        },
+
+         {
+            "id":"3",
+            "firstname":"Natalia",
+            "lastName":"Pivoda",
+            "email":"ionutbogdan11@gmail.com",
+            "password":"natalia"
+        }
+    ]
+}
+
