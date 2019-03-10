@@ -1,14 +1,16 @@
 
-#primaPagina{
-    background-color: rgba(000, 000, 000, .5);
-    margin :0 10%;
-   
+ #primaPagina{
+    background-color: #fff;
 }
-#clientPage{
-    background-color: rgba(000, 000, 000, .5);
-    margin :0 10%;
+
+#clientPage {
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    margin:50px;
 }
-#hostPage{
-    background-color: rgba(000, 000, 000, .5);
-    margin :0 10%;
+
+#hostPage {
+    background-color: red;
+    margin: 50px;
 }

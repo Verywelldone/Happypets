@@ -54,6 +54,7 @@ class Register extends Component {
                     </Col>
                       
                 </Form>
+                <br />
             </div>
         
        

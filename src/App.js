@@ -21,7 +21,6 @@ class App extends Component {
        
         <Router>
         <div>
-          <hr />
           <Switch>
               <Route exact path='/' component={Login} />
               <Route  exact path='/Logged' component={PrimaPagina} />
