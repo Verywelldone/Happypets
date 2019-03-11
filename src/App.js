@@ -23,7 +23,7 @@ class App extends Component {
         <div>
           <Switch>
               <Route exact path='/' component={Login} />
-              <Route  exact path='/Logged' component={PrimaPagina} />
+              <Route  exact path='/PrimaPagina' component={PrimaPagina} />
               <Route  exact path='/Register' component={Register} />
               <Route exact path='/hostPage' component={Host} />
               <Route exact path='/clientPage' component={Client} />

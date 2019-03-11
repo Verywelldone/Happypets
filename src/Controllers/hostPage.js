@@ -56,7 +56,7 @@ render(){
                 </Col>
                 </Row>
                
-                <Button color="success">Gazduiestea</Button>
+                <Button color="success" onClick={alert("Thank you")}>Gazduiestea</Button>
               
             </Form>
        </Container>
