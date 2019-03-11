@@ -11,6 +11,9 @@
 }
 
 #hostPage {
-    background-color: red;
-    margin: 50px;
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    margin:50px;
+    
 }

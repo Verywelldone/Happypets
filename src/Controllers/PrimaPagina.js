@@ -11,12 +11,12 @@ class PrimaPagina extends Component {
     }
     hostPage(){
         const path ="/hostPage";
-        this.props.history.push(path);  //nu reusecs sa deschid path-ul
+        this.props.history.push(path);  
     }
     
     clientPage(){
         const path ="/clientPage";
-        this.props.history.push(path);  //nu reusecs sa deschid path-ul
+        this.props.history.push(path);  
     }
 
     render(){
