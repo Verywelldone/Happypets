@@ -44,6 +44,7 @@ render(){
                 </Row>
                 <Row>
                     <Col>
+                    <legend className="col-form-label">Selectati numarul de zile</legend>
                 <ButtonGroup>
                 <Button color="primary" onClick={() => this.onRadioBtnClick(1)} active={this.state.rSelected === 1}>1 Zi</Button>
                 <Button color="primary" onClick={() => this.onRadioBtnClick(2)} active={this.state.rSelected === 2}>2 Zile</Button>
@@ -51,12 +52,12 @@ render(){
                 <Button color="primary" onClick={() => this.onRadioBtnClick(4)} active={this.state.rSelected === 4}>4 Zile</Button>
                 <Button color="primary" onClick={() => this.onRadioBtnClick(5)} active={this.state.rSelected === 5}>5 Zile</Button>
             </ButtonGroup>
-                <p>Selecati: {this.state.rSelected}</p>
+                <p>Selecati: {this.state.rSelected} zile</p>
                 </Col>
                 </Row>
-                <Row>
-                <Button color="succses"></Button>
-                </Row>
+               
+                <Button color="success">Gazduiestea</Button>
+              
             </Form>
        </Container>
         )
