@@ -38,7 +38,7 @@ render(){
                     <Col md={12}>
                         <FormGroup>
                             <Label for="number">Telefon</Label>
-                            <Input type="number" name="telefon" placeholder="0721201201"/>
+                            <Input type="number" name="telefon" placeholder="0123456789"/>
                         </FormGroup>
                     </Col>
                 </Row>

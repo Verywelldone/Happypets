@@ -1,26 +1,26 @@
 {
     "users":[
         {
-            "id":"1",
-            "firstname":"Bogdan",
-            "lastName":"Fatu",
+            "id": "1",
+            "name":"Bogdan Fatu",
+            "address":"Adresa 1",
             "email":"ionutbogdan11@gmail.com",
             "password":"bogdan"
         },
 
         {
-            "id":"2",
-            "firstname":"Marius",
-            "lastName":"Vraja",
-            "email":"ionutbogdan11@gmail.com",
+            "id": "2",
+            "name":"Vraja Marius",
+            "address":"Adresa 2",
+            "email":"VrajaMarius@gmail.com",
             "password":"marius"
         },
 
          {
-            "id":"3",
-            "firstname":"Natalia",
-            "lastName":"Pivoda",
-            "email":"ionutbogdan11@gmail.com",
+            "id": "3",
+            "name":"Natalia Pivoda",
+            "address":"Adresa 3",
+            "email":"NataliaPivoda@gmail.com",
             "password":"natalia"
         }
     ]

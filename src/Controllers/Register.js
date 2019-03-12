@@ -1,5 +1,6 @@
 import React, {Component} from  "react";
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap'
+import Axios from "axios";
 
 
 
@@ -7,17 +8,53 @@ class Register extends Component {
     constructor(){
         super();
         this.state = {
-            name: '',
-            address:'',
-            email:'',
-            password:''
+            users:[],
+            isLoadin:true,
+            errors:null
 
         }
           
            this.createAcount = this.createAcount.bind(this); // initializare paht
        }
 
+    ///    status 304 - NOT MODIFIED
+    
+      async getUsers(){
+           Axios.get("http://localhost:3004/db").then(response =>
+           response.data.results.map(users => ({
+               name: `${users.name}`,
+               address:`${users.address}`,
+               email:`${users.email}`,
+               password:`${users.password}`,
+            
+           })
 
+           )
+           ).then (users =>{
+               this.setState({
+                   users,
+                   isLoadin:false
+               });
+           }).catch(error => this.setState({ error, isLoading: false }));
+       }
+
+       /* TERMIN IO MAINE AICI */
+        test(){
+            Axios.get('http://localhost:3004/users/2')
+            .then(function (response) {
+              // handle success
+              console.log(response.data.name);
+            })
+            .catch(function (error) {
+              // handle error
+              console.log(error);
+            })
+            .then(function () {
+              // always executed
+            });
+       }
+       
+    
        /* DATA HANDLE */
             // functia de mai jos ( handleChange ) se ocupa de TOATE datele din input simultan.
        handleChange (event) {
@@ -46,13 +83,13 @@ class Register extends Component {
        /*
                         CONEXIUNE INTRE PAGINI 
        */
+      componentDidMount(){
+          this.getUsers();
+          console.log(this.state.users);
+      }
        createAcount(){
-          console.log(
-              this.state.name + " Aici e numele \n" + 
-              this.state.email + " Aici e emailul \n"+
-              this.state.address + " Aici e adresa \n"+
-              this.state.password + " Aici e parola \n"
-          )
+this.test();
+        console.log(this.state.users)
                 const  path ="/";   // Path-ul 
            this.props.history.push(path);  /// redirect catre path
        }
