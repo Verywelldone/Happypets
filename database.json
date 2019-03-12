@@ -1,28 +1,39 @@
 {
-    "users":[
-        {
-            "id": "1",
-            "name":"Bogdan Fatu",
-            "address":"Adresa 1",
-            "email":"ionutbogdan11@gmail.com",
-            "password":"bogdan"
-        },
-
-        {
-            "id": "2",
-            "name":"Vraja Marius",
-            "address":"Adresa 2",
-            "email":"VrajaMarius@gmail.com",
-            "password":"marius"
-        },
-
-         {
-            "id": "3",
-            "name":"Natalia Pivoda",
-            "address":"Adresa 3",
-            "email":"NataliaPivoda@gmail.com",
-            "password":"natalia"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "Bogdan Fatu",
+      "address": "Adresa 1",
+      "email": "ionutbogdan11@gmail.com",
+      "password": "bogdan"
+    },
+    {
+      "id": "2",
+      "name": "Vraja Marius",
+      "address": "Adresa 2",
+      "email": "VrajaMarius@gmail.com",
+      "password": "marius"
+    },
+    {
+      "id": "3",
+      "name": "Natalia Pivoda",
+      "address": "Adresa 3",
+      "email": "NataliaPivoda@gmail.com",
+      "password": "natalia"
+    },
+    {
+      "id": "4",
+      "name": "Fatu Bogdan",
+      "address": "Str. Panait Cerna nr. 1",
+      "email": "test@test.com",
+      "password": "1234"
+    },
+    {
+      "id": "5",
+      "name": "Primul User",
+      "address": "prima adresa",
+      "email": "primulEmail@mail.com",
+      "password": "4321"
+    }
+  ]
 }
-
