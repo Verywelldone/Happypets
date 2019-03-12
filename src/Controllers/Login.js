@@ -67,7 +67,7 @@ class Login extends Component {
               }
            }
            const  path ="/";
-           {alert("User sau email invalid");}
+           alert("User sau email invalid");
           this.props.history.push(path);
           })
         }

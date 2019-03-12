@@ -12,7 +12,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-dom';
 
 
+/* 
 
+    json-server --watch database.json --port 3001
+
+*/
 class App extends Component {
   render() {
     return (
