@@ -3,10 +3,10 @@ import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap'
 import Axios from "axios";
 
 
-
+let lastID;
 class Register extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
           name:"",
           address:"",
@@ -17,36 +17,67 @@ class Register extends Component {
            this.createAcount = this.createAcount.bind(this); // initializare paht
        }
 
-    ///    status 304 - NOT MODIFIED
-    
-    //   async getUsers(){
-    //        Axios.get("http://localhost:3004/db").then(response =>
-    //        response.data.results.map(users => ({
-    //            name: `${users.name}`,
-    //            address:`${users.address}`,
-    //            email:`${users.email}`,
-    //            password:`${users.password}`,
-            
-    //        })
+         /* DATA HANDLE */
+            // functia de mai jos ( handleChange ) se ocupa de TOATE datele din input simultan.
+    //    handleChange (event) {
+    //     this.setState({[event.target.name]: event.target.value} )
+    //   }
+        /* cele 4 functii de mai jos, se ocupa fiecare de cate un singur input */
+        handleName(name){
+            this.setState({name: `${name.target.value}`});
+          
 
-    //        )
-    //        ).then (users =>{
-    //            this.setState({
-    //                users,
-    //                isLoadin:false
-    //            });
-    //        }).catch(error => this.setState({ error, isLoading: false }));
-    //    }
+            //  console.log(this.state.name + " AICI E NUMELE")
+        }
 
-       /* TERMIN IO MAINE AICI */
+        handleAddres(adr){
+            this.setState({address: `${adr.target.value}`});
+            //  console.log(this.state.address + " AICI E Adresa")
+        }
+
+        handleEmail(email){
+            this.setState({email:email.target.value});
+            //  console.log(this.state.email + " AICI E emailul")
+        }
+        handlePassword(pass){
+            this.setState({password:pass.target.value});
+            //  console.log(this.state.password + " AICI E Password")
+        }
+
+/*
+
+*/
         test(){
             Axios.get('http://localhost:3001/users')
-            .then(function (response) {
+            .then( (response) => {
               // handle success
-              for(let i=0;i<response.data.length;i++)
-              console.log(response.data[i].email);
-              
-              console.log(this.state.email)
+              let i=response.data.length;
+              lastID= response.data[i-1].id;
+               console.log(lastID);
+              for(let i=0;i<response.data.length;i++){
+
+                if(response.data[i].email == this.state.email){
+                console.log("exista cont")
+  
+                    const  path ="/Register";   // Path-ul 
+                    this.props.history.push(path);
+                    return
+                }
+             }
+               
+                Axios.post('http://localhost:3001/users', {
+                    id:parseInt(lastID)+1 + "",
+                    name: this.state.name,
+                    address:this.state.address,
+                    email:this.state.email,
+                    password:this.state.password,
+                    
+                }).then((response)=>{
+                  console.log(response);
+                  console.log("Am creat cont nou.");
+             })
+            
+            //   console.log(this.state.email+ " EMAIL DIN TEST");
             })
             .catch(function (error) {
               // handle error
@@ -56,33 +87,8 @@ class Register extends Component {
               // always executed
             });
        }
-       
-    
-       /* DATA HANDLE */
-            // functia de mai jos ( handleChange ) se ocupa de TOATE datele din input simultan.
-       handleChange (event) {
-        this.setState({[event.target.name]: event.target.value} )
-      }
-        /* cele 4 functii de mai jos, se ocupa fiecare de cate un singur input */
-        handleName(name){
-            this.setState({name: name.target.value});
-             console.log(this.state.name + " AICI E NUMELE")
-        }
 
-        handleAddres(adr){
-            this.setState({address: adr.target.value});
-             console.log(this.state.name + " AICI E Adresa")
-        }
-
-        handleEmail(email){
-            this.setState({email:email.target.value});
-             console.log(this.state.email + " AICI E emailul")
-        }
-        handlePassword(pass){
-            this.setState({password:pass.target.value});
-             console.log(this.state.password + " AICI E Password")
-        }
-
+      
        /*
                         CONEXIUNE INTRE PAGINI 
        */
@@ -90,9 +96,17 @@ class Register extends Component {
     //       this.getUsers();
     //       console.log(this.state.users);
     //   }
+
+    formData(){
+        console.log(this.state.email + " EMAIL din formData");
+        console.log(this.state.password + " PASS DIN formData");
+        console.log(this.state.name + " NAME din formData");
+        console.log(this.state.address +" Address din formData");
+    }
        createAcount(){
-this.test();
-        console.log(this.state.users)
+        //    this.formData();
+            this.test();
+
                 const  path ="/";   // Path-ul 
            this.props.history.push(path);  /// redirect catre path
        }
@@ -110,25 +124,25 @@ this.test();
                     <Col>
                         <FormGroup>
                             <Label for="name">Your name:</Label>
-                            <Input type="text" placeholder = "First and last name" name="name" onChange={event => this.handleName(event)} id=""/>
+                            <Input type="text" placeholder = "First and last name" name="name" onChange={event => this.handleName(event)} id="name"/>
                         </FormGroup>
                     </Col>
                     <Col>
                         <FormGroup>
                             <Label for="address">Your address:</Label>
-                            <Input type="text" placeholder = "Address here" onChange={event => this.handleAddres(event)} name="name" id=""/>
+                            <Input type="text" placeholder = "Address here" onChange={event => this.handleAddres(event)} name="name" id="address"/>
                         </FormGroup>
                     </Col>
                     <Col>
                         <FormGroup>
                             <Label for="email">Email:</Label>
-                            <Input type="email" placeholder = "email@email.com" onChange={event => this.handleEmail(event)} name="email" id=""/>
+                            <Input type="email" placeholder = "email@email.com" onChange={event => this.handleEmail(event)} name="email" id="email"/>
                         </FormGroup>
                     </Col>
                     <Col>
                         <FormGroup>
                             <Label for="password">Create a password:</Label>
-                            <Input type="password" name="password" onChange={event => this.handlePassword(event)} id=""/>
+                            <Input type="password" name="password" onChange={event => this.handlePassword(event)} id="password"/>
                         </FormGroup>
                     </Col>
                     <Col>
