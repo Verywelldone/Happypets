@@ -8,10 +8,10 @@ class Register extends Component {
     constructor(){
         super();
         this.state = {
-            users:[],
-            isLoadin:true,
-            errors:null
-
+          name:"",
+          address:"",
+          email:"",
+          password:""
         }
           
            this.createAcount = this.createAcount.bind(this); // initializare paht
@@ -19,31 +19,34 @@ class Register extends Component {
 
     ///    status 304 - NOT MODIFIED
     
-      async getUsers(){
-           Axios.get("http://localhost:3004/db").then(response =>
-           response.data.results.map(users => ({
-               name: `${users.name}`,
-               address:`${users.address}`,
-               email:`${users.email}`,
-               password:`${users.password}`,
+    //   async getUsers(){
+    //        Axios.get("http://localhost:3004/db").then(response =>
+    //        response.data.results.map(users => ({
+    //            name: `${users.name}`,
+    //            address:`${users.address}`,
+    //            email:`${users.email}`,
+    //            password:`${users.password}`,
             
-           })
+    //        })
 
-           )
-           ).then (users =>{
-               this.setState({
-                   users,
-                   isLoadin:false
-               });
-           }).catch(error => this.setState({ error, isLoading: false }));
-       }
+    //        )
+    //        ).then (users =>{
+    //            this.setState({
+    //                users,
+    //                isLoadin:false
+    //            });
+    //        }).catch(error => this.setState({ error, isLoading: false }));
+    //    }
 
        /* TERMIN IO MAINE AICI */
         test(){
-            Axios.get('http://localhost:3004/users/2')
+            Axios.get('http://localhost:3001/users')
             .then(function (response) {
               // handle success
-              console.log(response.data.name);
+              for(let i=0;i<response.data.length;i++)
+              console.log(response.data[i].email);
+              
+              console.log(this.state.email)
             })
             .catch(function (error) {
               // handle error
@@ -61,32 +64,32 @@ class Register extends Component {
         this.setState({[event.target.name]: event.target.value} )
       }
         /* cele 4 functii de mai jos, se ocupa fiecare de cate un singur input */
-        handleName( name ){
+        handleName(name){
             this.setState({name: name.target.value});
-            // console.log(this.state.name + " AICI E NUMELE")
+             console.log(this.state.name + " AICI E NUMELE")
         }
 
         handleAddres(adr){
             this.setState({address: adr.target.value});
-            // console.log(this.state.name + " AICI E Adresa")
+             console.log(this.state.name + " AICI E Adresa")
         }
 
         handleEmail(email){
             this.setState({email:email.target.value});
-            // console.log(this.state.email + " AICI E emailul")
+             console.log(this.state.email + " AICI E emailul")
         }
         handlePassword(pass){
             this.setState({password:pass.target.value});
-            // console.log(this.state.password + " AICI E Password")
+             console.log(this.state.password + " AICI E Password")
         }
 
        /*
                         CONEXIUNE INTRE PAGINI 
        */
-      componentDidMount(){
-          this.getUsers();
-          console.log(this.state.users);
-      }
+    //   componentDidMount(){
+    //       this.getUsers();
+    //       console.log(this.state.users);
+    //   }
        createAcount(){
 this.test();
         console.log(this.state.users)
