@@ -44,9 +44,6 @@ class Register extends Component {
             //  console.log(this.state.password + " AICI E Password")
         }
 
-/*
-
-*/
         test(){
             Axios.get('http://localhost:3001/users')
             .then( (response) => {

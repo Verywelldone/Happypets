@@ -27,6 +27,13 @@
       "address": "Str. Panait Cerna nr. 1",
       "email": "test@test.com",
       "password": "1234"
+    },
+    {
+      "id": "5",
+      "name": "Primul User",
+      "address": "prima adresa",
+      "email": "primulEmail@mail.com",
+      "password": "4321"
     }
   ]
 }

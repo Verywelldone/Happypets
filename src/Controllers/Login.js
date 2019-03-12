@@ -6,6 +6,8 @@ import {
   Button, FormText, FormFeedback
 } from 'reactstrap';
 
+import Axios from "axios";
+
 class Login extends Component {
     constructor(props) {
         super(props);
@@ -50,16 +52,24 @@ class Login extends Component {
 
       LogIn(){
           const { email, password } = this.state;
-          if(email === "test@test.com" && password === "1234"){
-            const  path ="/PrimaPagina";
 
-            this.props.history.push(path); 
-          }else {
-            const  path ="/";
-                {alert("User sau email invalid");}
-            this.props.history.push(path);
-          }
-    
+          Axios.get("http://localhost:3001/users")
+          .then( (response) => {
+            for(let i=0;i<response.data.length;i++){
+
+              if(response.data[i].email == email 
+                && response.data[i].password == password){
+                    console.log("m-am logat")
+
+                  const  path ="/PrimaPagina";   // Path-ul 
+                  this.props.history.push(path);
+                  return
+              }
+           }
+           const  path ="/";
+           {alert("User sau email invalid");}
+          this.props.history.push(path);
+          })
         }
       
         Register(){
