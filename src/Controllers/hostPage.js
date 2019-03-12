@@ -56,8 +56,13 @@ render(){
                 </Col>
                 </Row>
                
-                <Button color="success" onClick={alert("Thank you")}>Gazduiestea</Button>
-              
+                <Button id="submit-button" class="submit-btn" color="success" onClick={alert("Thank you")}>Gazduiestea</Button>
+                <svg class="loader-svg">
+                <path stroke="#CCCCCC" fill="none" stroke-width="4" d="M25,2.5A22.5,22.5 0 1 1 2.5,25A22.5,22.5 0 0 1 25,2.5"></path></svg>
+                <svg class="loader-svg">
+                <path stroke="#20BF7E" fill="none" stroke-width="4" d="M25,2.5A22.5,22.5 0 1 1 2.5,25A22.5,22.5 0 0 1 25,2.5"></path></svg>
+
+
             </Form>
        </Container>
         )

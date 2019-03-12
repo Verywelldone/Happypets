@@ -34,6 +34,13 @@
       "address": "prima adresa",
       "email": "primulEmail@mail.com",
       "password": "4321"
+    },
+    {
+      "id": "6",
+      "name": "Primul User",
+      "address": "prima adresa",
+      "email": "testl@test.com",
+      "password": "test"
     }
   ]
 }

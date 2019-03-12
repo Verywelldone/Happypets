@@ -16,6 +16,20 @@ constructor(){
         
       })
     }
+  clickedSubmit () {
+    this.clicked = true
+    this.$refs['submit-btn']
+    .addEventListener("transitionend", this.animateLoader, false);
+    }
+    computed: {
+      buttonClass () {
+        if (this.clicked) {
+          return 'round'
+        }
+        return ''
+      }
+    })
+  }
 }
 render () {
 return(
@@ -24,12 +38,4 @@ methods: {
       this.clicked = true
     }
   }
-  computed: {
-    buttonClass () {
-      if (this.clicked) {
-        return 'round'
-      }
-      return ''
-    }
-  })
-}
+  
