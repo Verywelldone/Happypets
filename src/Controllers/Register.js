@@ -53,7 +53,7 @@ class Register extends Component {
                console.log(lastID);
               for(let i=0;i<response.data.length;i++){
 
-                if(response.data[i].email == this.state.email){
+                if(response.data[i].email === this.state.email){
                 console.log("Email already exists.")
   
                     const  path ="/Register";   // Refresh page.

@@ -58,8 +58,8 @@ class Login extends Component {
           .then( (response) => {
             for(let i=0;i<response.data.length;i++){
 
-              if(response.data[i].email == email 
-                && response.data[i].password == password){
+              if(response.data[i].email === email 
+                && response.data[i].password === password){
                   this.setState({name:response.data[i].name})
                     console.log("m-am logat")
 
