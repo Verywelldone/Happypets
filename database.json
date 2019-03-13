@@ -42,5 +42,9 @@
       "email": "testl@test.com",
       "password": "test"
     }
-  ]
+  ],
+  "currentSession": {
+    "name": "Bogdan Fatu",
+    "email": "ionutbogdan11@gmail.com"
+  }
 }

@@ -54,9 +54,9 @@ class Register extends Component {
               for(let i=0;i<response.data.length;i++){
 
                 if(response.data[i].email == this.state.email){
-                console.log("exista cont")
+                console.log("Email already exists.")
   
-                    const  path ="/Register";   // Path-ul 
+                    const  path ="/Register";   // Refresh page.
                     this.props.history.push(path);
                     return
                 }
@@ -71,7 +71,7 @@ class Register extends Component {
                     
                 }).then((response)=>{
                   console.log(response);
-                  console.log("Am creat cont nou.");
+                  console.log("New account created.");
              })
             
             //   console.log(this.state.email+ " EMAIL DIN TEST");
