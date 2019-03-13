@@ -41,6 +41,13 @@
       "address": "prima adresa",
       "email": "testl@test.com",
       "password": "test"
+    },
+    {
+      "id": "7",
+      "name": "natalia",
+      "address": "add",
+      "email": "nat@nat.com",
+      "password": "7458"
     }
   ]
 }
