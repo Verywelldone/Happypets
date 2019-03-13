@@ -1,7 +1,11 @@
+.loginForm {
+    background:rgba(255, 221,153);
+    color: #000;
+    margin: 100px;
+  }
 
- #primaPagina{
-    background-color: #fff;
-    margin:0 30%;
+.Card {
+    margin: 50px;
 }
 
 /*  Margin-ul decentreaza tot div-ul.  :D  */

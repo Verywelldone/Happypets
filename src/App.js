@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header"> */}
        
         <Router>
         <div>
@@ -38,7 +38,7 @@ class App extends Component {
       
       </Router>
           
-          </header>
+          {/* </header> */}
       </div>
     );
   }
