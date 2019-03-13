@@ -49,5 +49,9 @@
       "email": "nat@nat.com",
       "password": "7458"
     }
-  ]
+  ],
+  "currentSession": {
+    "name": "Fatu Bogdan",
+    "email": "test@test.com"
+  }
 }

@@ -17,6 +17,7 @@ class Login extends Component {
           validate: {
             emailState: '',
           },
+          "name":" "
         }
         this.handleChange = this.handleChange.bind(this);
         this.LogIn = this.LogIn.bind(this);
@@ -57,10 +58,19 @@ class Login extends Component {
           .then( (response) => {
             for(let i=0;i<response.data.length;i++){
 
-              if(response.data[i].email == email 
-                && response.data[i].password == password){
+              if(response.data[i].email === email 
+                && response.data[i].password === password){
+                  this.setState({name:response.data[i].name})
                     console.log("m-am logat")
 
+                    /* Sesiune logare -- user conectat*/ 
+                        Axios.post("http://localhost:3001/currentSession",{
+                          "name":this.state.name,
+                          "email":this.state.email
+                        }).then((response)=>{
+                          console.log(response);
+                          console.log("New session created");
+                     })
                   const  path ="/PrimaPagina";   // Path-ul 
                   this.props.history.push(path);
                   return
