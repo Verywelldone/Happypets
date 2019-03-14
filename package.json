@@ -8,6 +8,7 @@
     "gsap": "^2.1.2",
     "json-server": "^0.14.2",
     "react": "^16.8.4",
+    "react-awesome-button": "^6.0.0",
     "react-dom": "^16.8.4",
     "react-native-micro-animated-button": "0.0.28",
     "react-native-vector-icons": "^6.4.1",

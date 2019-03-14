@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
 
-import Login from "./Controllers/Login.js"
-import Register from "./Controllers/Register"
-import PrimaPagina from "./Controllers/PrimaPagina"
-import Host from "./Controllers/hostPage"
-import Client from "./Controllers/clientPage"
+<<<<<<< HEAD
+=======
+import routes from './shared/routes';
+import NavBar from "./Controllers/NavBar"
 
+>>>>>>> 38e56ec14b7449a1a408e9260a21fc622868c090
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-dom';
 
@@ -19,22 +18,25 @@ import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-d
 class App extends Component {
   render() {
     return (
+<<<<<<< HEAD
 
       
       <div className="App">
 
+=======
+      
+      <div className="App">
+>>>>>>> 38e56ec14b7449a1a408e9260a21fc622868c090
         <Router>
-        <div>
-          <Switch>
-              <Route exact path='/' component={Login} />
-              <Route  exact path='/PrimaPagina' component={PrimaPagina} />
-              <Route  exact path='/Register' component={Register} />
-              <Route exact path='/hostPage' component={Host} />
-              <Route exact path='/clientPage' component={Client} />
-          </Switch>
+          {/* <header className="App-header"> */}
+          <>
+            <NavBar/>
+            
+            <Switch>
+                { routes.map( route => <Route exact path={ route.path } component={ route.component } />) }
+            </Switch>
+          </>
           
-        </div>
-        
       
       </Router>
           

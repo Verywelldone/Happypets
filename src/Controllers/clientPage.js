@@ -1,5 +1,5 @@
 import React, {Component} from  "react";
-import "./LoginCSS.css";
+
 import { Container, Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class ClientPage extends Component {
