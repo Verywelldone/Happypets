@@ -7,7 +7,6 @@ import PrimaPagina from "./Controllers/PrimaPagina"
 import Host from "./Controllers/hostPage"
 import Client from "./Controllers/clientPage"
 
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-dom';
 
@@ -20,9 +19,10 @@ import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-d
 class App extends Component {
   render() {
     return (
+
+      
       <div className="App">
-        {/* <header className="App-header"> */}
-       
+
         <Router>
         <div>
           <Switch>
@@ -38,7 +38,6 @@ class App extends Component {
       
       </Router>
           
-          {/* </header> */}
       </div>
     );
   }

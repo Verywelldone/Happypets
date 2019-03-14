@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {
-  Container, Col, Form,
+  Col, Form,
   FormGroup, Label, Input,
   Button, FormText, FormFeedback
 } from 'reactstrap';
@@ -91,7 +91,7 @@ class Login extends Component {
         const { email, password } = this.state;
      
      return (
-          <Container className="loginForm">
+          <div className="loginForm">
             <h2>Sign In</h2>
             <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
               <Col>
@@ -136,7 +136,7 @@ class Login extends Component {
                 <br/>
               </Col>
           </Form>
-          </Container>
+          </div>
         );
       }   
 }
