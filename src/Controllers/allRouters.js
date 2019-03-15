@@ -17,8 +17,8 @@ class allRouters extends React.Component{
                 <div>
                     <Switch>
                         <Route exact path='/' component={Login} />
-                        <Route exact path='/PrimaPagina' component={PrimaPagina} />
                         <Route exact path='/Register' component={Register} />
+                        <Route exact path='/PrimaPagina' component={PrimaPagina} />
                         <Route exact path='/hostPage' component={Host} />
                         <Route exact path='/clientPage' component={Client} />
                     </Switch>
