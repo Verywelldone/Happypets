@@ -18,7 +18,7 @@ class App extends Component {
           <>
             <NavBar/>
             <Switch>
-                { routes.map( route => <Route exact path={ route.path } component={ route.component } />) }
+                { routes.map( route => <Route key={route.id.toString()} exact path={ route.path } component={ route.component } />) }
             </Switch>
           </>
         </Router>
