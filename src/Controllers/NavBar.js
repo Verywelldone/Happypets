@@ -11,7 +11,7 @@ class NavBar extends Component {
         return(
             <div>
         <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">Fatu Bogdan</NavbarBrand>
+        <NavbarBrand href="/">HAPPY PETS</NavbarBrand>
         <Nav className="ml-auto" navbar>
 
           <ul className="navbar-nav mr-auto">

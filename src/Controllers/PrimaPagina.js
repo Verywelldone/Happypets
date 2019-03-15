@@ -1,10 +1,6 @@
 import React from  "react";
-<<<<<<< HEAD
 import { Card, Button, CardTitle, CardText, Row, Col, CardImg } from 'reactstrap';
-import "./LoginCSS.css"
-=======
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
->>>>>>> 38e56ec14b7449a1a408e9260a21fc622868c090
+
 
 
 class PrimaPagina extends React.Component { 

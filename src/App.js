@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-
-<<<<<<< HEAD
-=======
-import routes from './shared/routes';
-import NavBar from "./Controllers/NavBar"
-
->>>>>>> 38e56ec14b7449a1a408e9260a21fc622868c090
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch, Route /*Link*/ } from 'react-router-dom';
+import NavBar from "./Controllers/NavBar"
+import routes from './shared/routes';
 
 /* 
 
@@ -18,17 +12,8 @@ import { BrowserRouter as Router, Switch, Route, /*Link*/ } from 'react-router-d
 class App extends Component {
   render() {
     return (
-<<<<<<< HEAD
-
-      
-      <div className="App">
-
-=======
-      
-      <div className="App">
->>>>>>> 38e56ec14b7449a1a408e9260a21fc622868c090
+      <div>
         <Router>
-          {/* <header className="App-header"> */}
           <>
             <NavBar/>
             
@@ -36,10 +21,7 @@ class App extends Component {
                 { routes.map( route => <Route exact path={ route.path } component={ route.component } />) }
             </Switch>
           </>
-          
-      
-      </Router>
-          
+        </Router>
       </div>
     );
   }
