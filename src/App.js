@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route /*Link*/ } from 'react-router-do
 import NavBar from "./Controllers/NavBar"
 import routes from './shared/routes';
 
+
 /* 
 
     json-server --watch database.json --port 3001
@@ -16,7 +17,6 @@ class App extends Component {
         <Router>
           <>
             <NavBar/>
-            
             <Switch>
                 { routes.map( route => <Route exact path={ route.path } component={ route.component } />) }
             </Switch>
