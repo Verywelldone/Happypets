@@ -1,0 +1,16 @@
+
+.Cards {
+    margin:100px 80px 70px 80px;
+    background-color: #d9ff66;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.info {
+    text-align: center;
+}

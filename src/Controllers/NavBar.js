@@ -1,40 +1,39 @@
 import React, { Component } from 'react';
-import {Navbar,NavbarBrand, Nav } from 'reactstrap';
-<<<<<<< HEAD
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-=======
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
->>>>>>> 63d11185a9160cd4abdae7bcd6cf8cf3254a4578
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import routes from "../shared/routes"
 
 
 class NavBar extends Component {
-    render(){
-        return(
-            <div>
-              <Navbar className="navy" expand="md" fixed="top" color="light">
-              <NavbarBrand href="/">HAPPY PETS</NavbarBrand>
-              <Nav className="ml-auto" navbar>
-
-                  { routes.map(route => <li><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
-              
-<<<<<<< HEAD
-            { routes.map(route => <li key={route.id}><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
-          </ul>
-          </Nav>
-          </Navbar>
-          <hr />
-          
-        </div>
-=======
+    constructor(props) {
+        super(props);
+    
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.state = {
+          collapsed: true
+        };
+      }
+    
+      toggleNavbar() {
+        this.setState({
+          collapsed: !this.state.collapsed
+        });
+      }
+      render() {
+        return (
+          <div>
+            <Navbar color="light" light expand="md" fixed="top">
+              <NavbarBrand href="/" className="mr-auto">HAPPY PUPPY</NavbarBrand>
+              <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+              <Collapse isOpen={!this.state.collapsed} navbar>
+                <Nav navbar className="ml-auto">
+                     { routes.map(route => <li><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
                 </Nav>
-                </Navbar><br />
-            </div>
-
->>>>>>> 63d11185a9160cd4abdae7bcd6cf8cf3254a4578
+              </Collapse>
+            </Navbar>
+          </div>
         );
+      }
     }
-}
 
 export default NavBar
