@@ -56,7 +56,7 @@ render(){
                 </Col>
                 </Row>
                
-                <Button color="danger">Gazduiestea</Button>
+                <Button color="danger">Gazduieste</Button>
 
             </Form>
        </Container>
