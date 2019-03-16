@@ -1,5 +1,5 @@
 import React, {Component} from  "react";
-import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap'
+import { Button, Form, Container, FormGroup, Label, Input, Col } from 'reactstrap'
 import Axios from "axios";
 
 
@@ -107,7 +107,8 @@ class Register extends Component {
             
             <div id="primaPagina">
             <Col><h2>Register for a Happy Puppy</h2></Col>
-                <Form>
+            <Container id ="register">
+                <Form className="space">
                     <Col>
                         <FormGroup>
                             <Label for="name">Your name:</Label>
@@ -138,6 +139,7 @@ class Register extends Component {
                     </Col>
                       
                 </Form>
+            </Container>
                 <br />
             </div>
         

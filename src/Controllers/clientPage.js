@@ -62,7 +62,7 @@ class ClientPage extends Component {
     return(
         <Container id ="clientPage">
         <br/>
-            <Form>
+            <Form className="space">
                 <Row form>
                     <Col md={12}>
                         <FormGroup>

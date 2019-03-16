@@ -48,9 +48,17 @@
       "address": "add",
       "email": "nat@nat.com",
       "password": "7458"
+    },
+    {
+      "id": "8",
+      "name": "Marius",
+      "address": "marius",
+      "email": "marius.valentin.v@gmail.com",
+      "password": "test"
     }
   ],
   "currentSession": {
+<<<<<<< HEAD
     "name": "Bogdan Fatu",
     "email": "ionutbogdan11@gmail.com"
   },
@@ -71,4 +79,9 @@
     }
   ],
   "hosts": []
+=======
+    "name": "Marius",
+    "email": "marius.valentin.v@gmail.com"
+  }
+>>>>>>> e6d6d70636568f60998f55e806aa494f45ee8c09
 }
