@@ -58,7 +58,6 @@
     }
   ],
   "currentSession": {
-<<<<<<< HEAD
     "name": "Bogdan Fatu",
     "email": "ionutbogdan11@gmail.com"
   },
@@ -76,12 +75,54 @@
       "daysNumber": "4 zile",
       "comments": "NU ms",
       "id": 2
+    },
+    {
+      "name": "Popescu Ion",
+      "animal": "mare",
+      "daysNumber": "",
+      "comments": "asdf test",
+      "id": 3
+    },
+    {
+      "name": "Popescu NOI",
+      "animal": "mica",
+      "comments": "test 1 zi",
+      "id": 4
+    },
+    {
+      "name": "Test 3",
+      "animal": "mica",
+      "comments": "test 3",
+      "id": 5
+    },
+    {
+      "name": "test 4",
+      "animal": "mica",
+      "daysNumber": "",
+      "comments": "test 4",
+      "id": 6
+    },
+    {
+      "name": "test 5 ",
+      "animal": "mica",
+      "daysNumber": "1",
+      "comments": "asd",
+      "id": 7
+    },
+    {
+      "name": "test 7",
+      "animal": "mica",
+      "daysNumber": "4 zile",
+      "comments": "qwe",
+      "id": 8
+    },
+    {
+      "name": "adfsda",
+      "animal": "medie",
+      "daysNumber": "2",
+      "comments": "asdf",
+      "id": 9
     }
   ],
   "hosts": []
-=======
-    "name": "Marius",
-    "email": "marius.valentin.v@gmail.com"
-  }
->>>>>>> e6d6d70636568f60998f55e806aa494f45ee8c09
 }

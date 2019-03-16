@@ -24,7 +24,7 @@ class ClientPage extends Component {
         
 
     handleNameChange(event){
-        this.setState({name:event.target.value});
+        this.setState({name : event.target.value});
         console.log(this.state.name + " name ")
     }
 
@@ -42,14 +42,25 @@ class ClientPage extends Component {
         this.setState({comments:event.target.value})
         console.log(this.state.comments + " comments ")
     }
+    
+   componentDidMount(){
+       if(this.state.daysNumber === ""){
+          this.setState({daysNumber:"1"})
+       }
+   }
 
     saveDataInDB(){
+      
+            if(this.state.daysNumber === "")
+                 this.setState({daysNumber:"1"})
+        
         axios.post("http://localhost:3001/clients",{
             name:this.state.name,
             animal:this.state.animal,
             daysNumber:this.state.daysNumber,
             comments:this.state.comments
          }).then(()=>{
+             
             const  path ="/PrimaPagina";   // Path-ul 
             this.props.history.push(path);  /// redirect catre path
          }).catch(function (error) {
@@ -99,12 +110,13 @@ class ClientPage extends Component {
                 <FormGroup row>
                     <Label for="exampleSelect" sm={4}>Alege nr de zile</Label>
                     <Col sm={8}>
-                    <Input type="select" name="select" id="exampleSelect" onChange={event => this.numberOfDaysChange(event)}>
-                        <option>1 zi</option>
-                        <option>2 zile</option>
-                        <option>3 zile</option>
-                        <option>4 zile</option>
-                        <option>5 zile</option>
+                    <Input type="select" name="select" placeholder="Select number of days" id="exampleSelect" onChange={event => this.numberOfDaysChange(event)}>
+
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
                     </Input>
                     </Col>
                 </FormGroup>
