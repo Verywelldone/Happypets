@@ -48,10 +48,17 @@
       "address": "add",
       "email": "nat@nat.com",
       "password": "7458"
+    },
+    {
+      "id": "8",
+      "name": "",
+      "address": "marius",
+      "email": "marius.valentin.v@gmail.com",
+      "password": "test"
     }
   ],
   "currentSession": {
-    "name": "Bogdan Fatu",
-    "email": "ionutbogdan11@gmail.com"
+    "name": "",
+    "email": "marius.valentin.v@gmail.com"
   }
 }

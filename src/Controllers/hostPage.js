@@ -1,5 +1,5 @@
 import React, {Component} from  "react";
-
+import "./hostPage.css";
 import { Container, Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class HostPage extends Component {
@@ -17,7 +17,7 @@ class HostPage extends Component {
 render(){
     return(
        <Container id ="hostPage">
-            <Form>
+            <Form className="space">
                 <Row form>
                     <Col md={12}>
                         <FormGroup>
@@ -56,7 +56,7 @@ render(){
                 </Col>
                 </Row>
                
-                <Button color="success" onClick={alert("Thank you")}>Gazduiestea</Button>
+                <Button color="danger">Gazduiestea</Button>
 
             </Form>
        </Container>
