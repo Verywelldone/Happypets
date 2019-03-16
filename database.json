@@ -68,61 +68,36 @@
       "daysNumber": "4 zile",
       "comments": "Vreau sho o cafea va rog. Doua lingurite de zahar si un biscuit. Mersi !",
       "id": 1
+    }
+  ],
+  "hosts": [
+    {
+      "name": "Fatu Bogdan",
+      "address": "Str. Panait Cerna nr. 1",
+      "phone": "0770151351",
+      "days": "1",
+      "id": 1
     },
     {
-      "name": "Adoua Persoana",
-      "animal": "medie",
-      "daysNumber": "4 zile",
-      "comments": "NU ms",
+      "name": "Marius",
+      "address": "adresa 1 ",
+      "phone": "021423512123",
+      "days": "3",
       "id": 2
     },
     {
-      "name": "Popescu Ion",
-      "animal": "mare",
-      "daysNumber": "",
-      "comments": "asdf test",
+      "name": "Natalia",
+      "address": "adresa 12",
+      "phone": "012552121341",
+      "days": "5",
       "id": 3
     },
     {
-      "name": "Popescu NOI",
-      "animal": "mica",
-      "comments": "test 1 zi",
+      "name": "Paul",
+      "address": "adresa 123",
+      "phone": "09423532453",
+      "days": "",
       "id": 4
-    },
-    {
-      "name": "Test 3",
-      "animal": "mica",
-      "comments": "test 3",
-      "id": 5
-    },
-    {
-      "name": "test 4",
-      "animal": "mica",
-      "daysNumber": "",
-      "comments": "test 4",
-      "id": 6
-    },
-    {
-      "name": "test 5 ",
-      "animal": "mica",
-      "daysNumber": "1",
-      "comments": "asd",
-      "id": 7
-    },
-    {
-      "name": "test 7",
-      "animal": "mica",
-      "daysNumber": "4 zile",
-      "comments": "qwe",
-      "id": 8
-    },
-    {
-      "name": "adfsda",
-      "animal": "medie",
-      "daysNumber": "2",
-      "comments": "asdf",
-      "id": 9
     }
-  ],
-  "hosts": []
+  ]
 }

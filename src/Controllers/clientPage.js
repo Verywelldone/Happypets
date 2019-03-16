@@ -112,11 +112,11 @@ class ClientPage extends Component {
                     <Col sm={8}>
                     <Input type="select" name="select" placeholder="Select number of days" id="exampleSelect" onChange={event => this.numberOfDaysChange(event)}>
 
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>1 zi</option>
+                        <option>2 zile</option>
+                        <option>3 zile</option>
+                        <option>4 zile</option>
+                        <option>5 zile</option>
                     </Input>
                     </Col>
                 </FormGroup>
