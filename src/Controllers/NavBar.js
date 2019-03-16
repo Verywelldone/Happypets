@@ -27,7 +27,7 @@ class NavBar extends Component {
               <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar className="ml-auto">
-                     { routes.map(route => <li key={route.id.toString()}><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
+                     { routes.map(route => <li key={route.id}><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
                 </Nav>
               </Collapse>
             </Navbar>

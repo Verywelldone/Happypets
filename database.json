@@ -53,5 +53,22 @@
   "currentSession": {
     "name": "Bogdan Fatu",
     "email": "ionutbogdan11@gmail.com"
-  }
+  },
+  "clients": [
+    {
+      "name": "Fatu Bogdan",
+      "animal": "mare",
+      "daysNumber": "4 zile",
+      "comments": "Vreau sho o cafea va rog. Doua lingurite de zahar si un biscuit. Mersi !",
+      "id": 1
+    },
+    {
+      "name": "Adoua Persoana",
+      "animal": "medie",
+      "daysNumber": "4 zile",
+      "comments": "NU ms",
+      "id": 2
+    }
+  ],
+  "hosts": []
 }

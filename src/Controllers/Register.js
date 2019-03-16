@@ -25,8 +25,6 @@ class Register extends Component {
         /* cele 4 functii de mai jos, se ocupa fiecare de cate un singur input */
         handleName(name){
             this.setState({name: `${name.target.value}`});
-          
-
             //  console.log(this.state.name + " AICI E NUMELE")
         }
 
@@ -85,14 +83,6 @@ class Register extends Component {
             });
        }
 
-      
-       /*
-                        CONEXIUNE INTRE PAGINI 
-       */
-    //   componentDidMount(){
-    //       this.getUsers();
-    //       console.log(this.state.users);
-    //   }
 
     formData(){
         console.log(this.state.email + " EMAIL din formData");
