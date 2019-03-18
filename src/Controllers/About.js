@@ -31,7 +31,7 @@ class PrimaPagina extends React.Component {
                   <CardText><li>Tu alegi talia animalului pe care îl găzduiești</li></CardText>
                   <CardText><li>Câștigi bani cu ușurință</li></CardText>
                   <CardText><li>Îți anunți disponibilitatea în momentul înregistrării</li></CardText>
-                  <CardImg top width="100%" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" /> <br/>
+                  <CardImg top width="100%" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" alt="Poza cu animale" /> <br/>
                   <CardText><li>Daca esti un iubitor de animale, nu mai astepta, fa primul pas si inregistreaza-te in aplicatie</li></CardText>
                 </Card>
               </Col>
@@ -46,13 +46,30 @@ class PrimaPagina extends React.Component {
                 </Card>
               </Col>
             </Row>
+            <hr />
           
-          <h5 className="info">CUM FUNCȚIONEAZĂ</h5>
-            <div className="col-sm-12">
-              <span>1. Iti creezi cont </span>
-              <span>2 Accepti cererile</span>
-              <span>3 Iti iei banii</span>
-            </div>
+          <h4 className="info">CUM FUNCȚIONEAZĂ</h4>
+          <h6 className="hassix">Urmeaza cei trei pasi simpli</h6>
+            <Card body className="smallcards">
+              <CardText className="text">1. Te inregistrezi in aplicatie<br />
+                Fie ca vrei sa devii o gazda pentru un animal de companie sau esti proprietarul unui animal de comapnie, primul pas este sa te inregistrezi in aplicatia Happy Puppy
+              </CardText>
+            </Card>
+            <Card body className="smallcards">
+              <CardText className="text">2. Din contul tau poti cauta o gazda daca ai un animal de companie sau poti accepta o cerere daca te-ai inregistrat ca si gazda </CardText>
+            </Card>
+            <Card body className="smallcards">
+              <CardText className="text">3. Toata lumea e multumita </CardText>
+            </Card><br />
+            <footer className="footer-ul">
+              <ul> 
+                <li>Despre noi</li>
+                <li>Contact</li>
+                <li>Politica de cookie</li>
+                <li>Termeni si conditii de utilizare a website-ului</li>
+              </ul>
+             
+            </footer> 
         </div>
         );
         } 

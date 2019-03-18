@@ -2,7 +2,12 @@ import React, {Component} from "react"
 
   class firstPage extends Component {
     render(){
-        return <div> Actually first page</div>
+        return (
+        
+        <div> Actually first page</div>
+          
+          
+          )
     }
 }
 

@@ -1,6 +1,6 @@
 
 .Cards {
-    margin:100px 80px 70px 80px;
+    margin:20px 50px 70px 50px;
     background-color: #d9ff66;
 }
 
@@ -13,4 +13,36 @@
 
 .info {
     text-align: center;
+}
+
+.hassix {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.smallcards {
+    margin-bottom: 18px;
+    border: 2px solid #00bd70;
+    border-radius: 15px;
+    background-color: #00bd70;
+    color: #fff;
+    font-weight: bold; 
+}
+
+.smallcards:hover {
+    background-color: #ffff99;
+    border:2px solid #ffff99;
+    color: #333;
+    font-weight: bold; 
+}
+
+.text {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-ul {
+    margin-top: 20px;
 }
