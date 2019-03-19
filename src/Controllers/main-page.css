@@ -1,5 +1,37 @@
 
-
 img {
+    width: 100%;
+    margin-top: -40px;
+}
+
+.firsth {
+    margin-top: 20px;
+    text-align: center;
+    color: #993300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hasfour {
+    text-align: center;
+    font-style: italic;
+}
+
+.new-horizontal {
+    background-color: #fff;
+    border-top: 2px dashed #8c8b8b;
+    width: 60%;
+}
+
+.petsimg {
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+}
+
+.hastree {
+    margin-top: 40px;
+}
+
+.buton-host {
     width: 100%;
 }
