@@ -39,7 +39,7 @@ import { Button } from 'reactstrap';
                   <li>Grija pentru animalele de companie poate chiar să ne prelungească viața</li>
                   <li>Ne pot îmbunătăți starea de spirit și sănătatea</li>
                 </ul>
-                <Button className="buton-host" color="success" onClick={this.hostPage}>Înscrie-te acum și gazduiește un animal de companie</Button>
+                <Button className="buton-host" color="success" onClick={this.hostPage}>Înscrie-te acum și găzduiește un animal de companie</Button>
               </div>
             </div>
             <div className="row">
@@ -49,7 +49,7 @@ import { Button } from 'reactstrap';
                 <li>Orice animal de companie are nevoie de atenție, dorește să se joace sau să alerge</li>
                 <li>Prietenul tău necuvântător are nevoie de cineva care să îl îngrijească și să îl hrănească și atunci când ești la serviciu sau în oraș cu prietenii</li>
                 <li>Ce faci atunci când vrei să pleci in vacanță și nu poți călători cu animalul tău de companie?</li>
-                <li>Câți din prietenii tăi ar putea îl găzduiască în tot acest timp?</li>
+                <li>Câți dintre prietenii tăi ar putea să îl găzduiască în tot acest timp?</li>
                 </ul>
                 <Button className="buton-client" color="danger" onClick={this.clientPage}>Caută o gazdă pentru animalul tău de companie</Button>
               </div>
