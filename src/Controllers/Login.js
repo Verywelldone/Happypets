@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import "./login-form.css"
 
 import {
   Col, Form,
   FormGroup, Label, Input,
-  Button, FormText, FormFeedback
+  Button, FormFeedback
 } from 'reactstrap';
 
 import Axios from "axios";
@@ -91,12 +92,13 @@ class Login extends Component {
         const { email, password } = this.state;
      
      return (
+        <> 
           <div className="loginForm">
-            <h2>Sign In</h2>
+            <h2 className="login-title">Bine ai venit!</h2>
             <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
               <Col>
                 <FormGroup>
-                  <Label>Username</Label>
+                  <Label><strong>Introdu adresa de email</strong></Label>
                   <Input
                     type="email"
                     name="email"
@@ -116,12 +118,11 @@ class Login extends Component {
                   <FormFeedback>
                   Email-ul nu este valid.
                   </FormFeedback>
-                  <FormText>Your username is most likely your email.</FormText>
                 </FormGroup>
               </Col>
               <Col>
                 <FormGroup>
-                  <Label for="examplePassword">Password</Label>
+                  <Label for="examplePassword"><strong>Introdu parola</strong></Label>
                   <Input
                     type="password"
                     name="password"
@@ -131,12 +132,14 @@ class Login extends Component {
                     onChange={ (e) => this.handleChange(e) }
                 />
                 </FormGroup>
-                <Button color="warning" size="lg" block onClick={this.LogIn}>Sign In</Button>
-                <Button color="success" size="lg" block onClick={this.Register}>Sign Up</Button>
+                <Button className="login-buton" size="lg" block onClick={this.LogIn}>Continuă</Button>
+                {/* <Button color="success" size="lg" block onClick={this.Register}>Sign Up</Button> */}
                 <br/>
               </Col>
           </Form>
-          </div>
+        </div>
+        <p className="first-paragraph">Ai nevoie de ajutor?</p>
+       </> 
         );
       }   
 }
