@@ -93,6 +93,7 @@ class Login extends Component {
      
      return (
         <> 
+        {/* <div>HAPPY PUPPY-LOGO</div> */}
           <div className="loginForm">
             <h2 className="login-title">Bine ai venit!</h2>
             <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
