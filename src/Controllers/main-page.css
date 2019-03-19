@@ -58,6 +58,10 @@
     margin-right: 80px;
 }
 
+.footer-ul li:hover {
+    color: #8e852d;
+}
+
 #first-footer {
     display: flex;
     flex-direction: row;
