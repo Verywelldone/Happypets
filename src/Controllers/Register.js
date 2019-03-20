@@ -1,5 +1,6 @@
 import React, {Component} from  "react";
 import { Button, Form, Container, FormGroup, Label, Input, Col } from 'reactstrap'
+import "./register.css"
 import Axios from "axios";
 
 
@@ -105,8 +106,8 @@ class Register extends Component {
             //  onChange din inputs parseaza numele inputului in state-ul din constructor prin functia handleChange
             //  functia handleChange, in functie de parametrul primit ( numele inputului ) alege ce obiect din state trebuie modificat
             
-            <div id="primaPagina">
-            <Col><h2>Register for a Happy Puppy</h2></Col>
+            <div>
+            <h2>Creează un cont Happy Puppy</h2>
             <Container id ="register">
                 <Form className="space">
                     <Col>

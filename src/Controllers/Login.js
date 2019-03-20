@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import "./login-form.css"
 
 import {
@@ -135,11 +136,16 @@ class Login extends Component {
                 </FormGroup>
                 <Button className="login-buton" size="lg" block onClick={this.LogIn}>Continuă</Button>
                 <hr />
-                <p>Nu ai cont? <a href="/Register" onClick={ this.Register }>Creează cont</a></p>
+                <p>Nu ai cont? <Link to="/Register" onClick={ this.Register }>Creează cont</Link></p>
               </Col>
           </Form>
         </div>
         <p className="first-paragraph">Ai nevoie de ajutor?</p>
+        <footer className="footer-login">
+            <span>Date cu caracter personal |</span>
+            <span> Politica de cookieuri |</span>
+            <span> Politica de confidențialitate</span>
+        </footer>
        </> 
         );
       }   
