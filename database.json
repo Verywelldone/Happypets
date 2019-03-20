@@ -57,10 +57,12 @@
       "password": "test"
     }
   ],
+
   "currentSession": {
-    "name": "Bogdan Fatu",
-    "email": "ionutbogdan11@gmail.com"
+    "name": "",
+    "email": ""
   },
+
   "clients": [
     {
       "name": "Fatu Bogdan",
@@ -98,13 +100,6 @@
       "phone": "09423532453",
       "days": "",
       "id": 4
-    },
-    {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "days": "1",
-      "id": 5
     }
   ]
 }

@@ -28,6 +28,7 @@ class NavBar extends Component {
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar className="ml-auto">
                      { routes.map(route => <li key={route.id}><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
+                     <li>Log Out</li>
                 </Nav>
               </Collapse>
             </Navbar>

@@ -1,6 +1,8 @@
 import React, {Component} from "react"
 import "./main-page.css";
 import { Button } from 'reactstrap';
+import Axios from "axios"
+
 
   class firstPage extends Component {
 
@@ -11,25 +13,45 @@ import { Button } from 'reactstrap';
   }
 
   hostPage(){
-      const path ="/hostPage";
-      this.props.history.push(path);  
+    Axios.get("http://localhost:3001/currentSession").then((response) => {
+      if(response.data.name !== "" && response.data.email !== ""){
+        console.log(response.data.name + response.data.email)
+        const path ="/hostPage";
+        this.props.history.push(path)
+      } 
+      else{
+        const path ="/Login";
+        this.props.history.push(path)
+      }
+  })
   }
 
   clientPage(){
-    const path ="/clientPage";
-    this.props.history.push(path);  
+
+    Axios.get("http://localhost:3001/currentSession").then((response) => {
+        if(response.data.name !== "" && response.data.email !== ""){
+          console.log(response.data.name + response.data.email)
+          const path ="/clientPage";
+          this.props.history.push(path)
+        } 
+        else{
+          const path ="/Login";
+          this.props.history.push(path)
+        }
+    })
+  ;  
 }
 
     render(){
         return (
           <div id="maindiv"> 
-            <header className="App-header"><img src={require("../Images/home-dog-running.jpg")} alt="pets" className="dog-runing" /></header>
+            <header className="App-header"><img src="https://www.healthy-pets.co.uk/image/image_site/home-dog-running.jpg" alt="pets" className="dog-runing" /></header>
             <h1 className="firsth">#HAPPY PUPPY</h1>
             <h4 className="hasfour">~ Alătură-te prietenilor necuvântători ~</h4>
             <hr className="new-horizontal"/>
             <div className="row">
               <div className="col-sm-6">
-                <img src={require("../Images/pets1.jpg")} alt="pets" className="petsimg" />
+                <img src="https://askgramps.org/files/2016/08/pets1.jpg" alt="pets" className="petsimg" />
               </div> 
               <div className="col-sm-6">
                 <h3 className="hastree">Știați că...?</h3>
@@ -54,7 +76,7 @@ import { Button } from 'reactstrap';
                 <Button className="buton-client" color="danger" onClick={this.clientPage}>Caută o gazdă pentru animalul tău de companie</Button>
               </div>
               <div className="col-sm-6">
-                <img src={require("../Images/A-beagle-looking-sick-or-tired.jpg")} alt="pets" className="petsimg" />
+                <img src="https://www.dogster.com/wp-content/uploads/2017/10/A-beagle-looking-sick-or-tired.jpg" alt="pets" className="petsimg" />
               </div>
             </div>
             <hr className="second-horizontal" /> 
