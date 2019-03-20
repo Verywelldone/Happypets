@@ -107,19 +107,20 @@ class Register extends Component {
             //  functia handleChange, in functie de parametrul primit ( numele inputului ) alege ce obiect din state trebuie modificat
             
             <div>
-            <h2>Creează un cont Happy Puppy</h2>
+            
             <Container id ="register">
-                <Form className="space">
+            <h4 className="header-title">Creează un cont Happy Puppy</h4>
+                <Form>
                     <Col>
                         <FormGroup>
-                            <Label for="name">Your name:</Label>
-                            <Input type="text" placeholder = "First and last name" name="name" onChange={event => this.handleName(event)} id="name"/>
+                            <Label for="name">Introdu numele complet:</Label>
+                            <Input type="text" placeholder = "Nume și prenume:" name="name" onChange={event => this.handleName(event)} id="name"/>
                         </FormGroup>
                     </Col>
                     <Col>
                         <FormGroup>
-                            <Label for="address">Your address:</Label>
-                            <Input type="text" placeholder = "Address here" onChange={event => this.handleAddres(event)} name="name" id="address"/>
+                            <Label for="address">Adresa ta:</Label>
+                            <Input type="text" placeholder = "Adresa completă:" onChange={event => this.handleAddres(event)} name="name" id="address"/>
                         </FormGroup>
                     </Col>
                     <Col>
@@ -130,13 +131,13 @@ class Register extends Component {
                     </Col>
                     <Col>
                         <FormGroup>
-                            <Label for="password">Create a password:</Label>
-                            <Input type="password" name="password" onChange={event => this.handlePassword(event)} id="password"/>
+                            <Label for="password">Introdu o parolă:</Label>
+                            <Input type="password" name="password" placeholder="******" onChange={event => this.handlePassword(event)} id="password"/>
                         </FormGroup>
                     </Col>
                     <Col>
                       {/* apel path ^ */}
-                      <Button color="danger" size="lg" block onClick={this.createAcount}>Sign Up</Button> 
+                      <Button className="buton-register" size="lg" block onClick={this.createAcount}>Creează cont</Button> 
                     </Col>
                       
                 </Form>
