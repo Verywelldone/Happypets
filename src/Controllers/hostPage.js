@@ -92,7 +92,7 @@ render(){
                     <Button color="primary" value="4" onClick={event=> this.handleSelected(event)}>4</Button>
                     <Button color="primary" value="5" onClick={event=> this.handleSelected(event)}>5</Button>
                 </ButtonGroup>
-                <p></p>
+                <p>Selectați {this.state.days} zile.</p>
                 </Col>
                 </Row>
                
