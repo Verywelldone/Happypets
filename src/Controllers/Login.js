@@ -134,8 +134,8 @@ class Login extends Component {
                 />
                 </FormGroup>
                 <Button className="login-buton" size="lg" block onClick={this.LogIn}>Continuă</Button>
-                {/* <Button color="success" size="lg" block onClick={this.Register}>Sign Up</Button> */}
-                <br/>
+                <hr />
+                <p>Nu ai cont? <a href="/Register" onClick={ this.Register }>Creează cont</a></p>
               </Col>
           </Form>
         </div>
