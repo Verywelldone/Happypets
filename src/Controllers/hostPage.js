@@ -1,5 +1,5 @@
 import React, {Component} from  "react";
-import "./hostPage.css";
+import "./first-page-style.css";
 import { Container, Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios"
 
@@ -35,7 +35,7 @@ class HostPage extends Component {
 
       handleSelected(event) {
         this.setState({ days:event.target.value });
-        console.log(this.state.days+ " NUmber of days")
+        // console.log(this.state.days+ " NUmber of days")
     
     }
 
@@ -69,7 +69,7 @@ render(){
                 <Row>
                     <Col md={12}>
                         <FormGroup>
-                            <Label for="adresa">Adresa Completa:</Label>
+                            <Label for="adresa">Adresa Completă:</Label>
                             <Input type="adres" name="adres" placeholder="Strada:" onChange={event => this.handleAddres(event)} />
                         </FormGroup>
                     </Col>
@@ -84,7 +84,7 @@ render(){
                 </Row>
                 <Row>
                     <Col>
-                    <legend className="col-form-label">Selectati numarul de zile</legend>
+                    <legend className="col-form-label">Selectați numărul de zile</legend>
                 <ButtonGroup>
                     <Button color="primary" value="1" onClick={event=> this.handleSelected(event)}>1</Button>
                     <Button color="primary" value="2" onClick={event=> this.handleSelected(event)}>2</Button>
@@ -92,11 +92,11 @@ render(){
                     <Button color="primary" value="4" onClick={event=> this.handleSelected(event)}>4</Button>
                     <Button color="primary" value="5" onClick={event=> this.handleSelected(event)}>5</Button>
                 </ButtonGroup>
-                <p>Selecati: {this.state.rSelected} zile</p>
+                <p></p>
                 </Col>
                 </Row>
                
-                <Button color="danger" onClick={this.saveInDatabase}>Gazduieste</Button>
+                <Button color="success" onClick={this.saveInDatabase}>Gazduiește!</Button>
 
             </Form>
        </Container>

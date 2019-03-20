@@ -72,7 +72,7 @@ class ClientPage extends Component {
     render(){
     return(
         <Container id ="clientPage">
-        <br/>
+        
             <Form className="space">
                 <Row form>
                     <Col md={12}>
@@ -88,21 +88,21 @@ class ClientPage extends Component {
                     <FormGroup check>
                         <Label check>
                         <Input type="radio" name="radio2" value ="mica" onChange={event => this.animalTypeChange(event)}/>
-                        Caine de talie mica
+                        Câine de talie mică
                         </Label>
                     </FormGroup>
 
                     <FormGroup check>
                         <Label check>
                         <Input type="radio" name="radio2" value="medie" onChange={event => this.animalTypeChange(event)}/>
-                        Caine de talie medie
+                        Câine de talie medie
                         </Label>
                     </FormGroup>
 
                     <FormGroup check>
                         <Label check>
                         <Input type="radio" name="radio2" value="mare" onChange={event => this.animalTypeChange(event)}/>
-                        Caine de talie mare
+                        Câine de talie mare
                         </Label>
                     </FormGroup>
                 </Col>
@@ -121,15 +121,15 @@ class ClientPage extends Component {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="exampleText" sm={4}>Lasa un comentariu</Label>
+                    <Label for="exampleText" sm={4}>Lăsa un comentariu</Label>
                     <Col sm={8}>
                     <Input type="textarea" name="text" id="exampleText"  onChange={event => this.handleComments(event)} />
                     </Col>
                 </FormGroup>
-                <Button color="danger" onClick={this.saveDataInDB}>Cauta o gazda</Button>
+                <Button color="danger" onClick={this.saveDataInDB}>Caută o gazdă</Button>
                 
             </Form>
-            <br/>
+            
         </Container>
     )
     }
