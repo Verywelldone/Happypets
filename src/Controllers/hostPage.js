@@ -84,7 +84,7 @@ render(){
                 </Row>
                 <Row>
                     <Col>
-                    <legend className="col-form-label">Selectați numărul de zile</legend>
+                    <legend className="col-form-label">Selectați numărul de zile:</legend>
                 <ButtonGroup>
                     <Button color="primary" value="1" onClick={event=> this.handleSelected(event)}>1</Button>
                     <Button color="primary" value="2" onClick={event=> this.handleSelected(event)}>2</Button>

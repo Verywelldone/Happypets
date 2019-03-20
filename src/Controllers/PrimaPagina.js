@@ -23,13 +23,13 @@ import { Button } from 'reactstrap';
     render(){
         return (
           <div id="maindiv"> 
-            <header className="App-header"><img src="https://www.healthy-pets.co.uk/image/image_site/home-dog-running.jpg" alt="pets" className="dog-runing" /></header>
+            <header className="App-header"><img src={require("../Images/home-dog-running.jpg")} alt="pets" className="dog-runing" /></header>
             <h1 className="firsth">#HAPPY PUPPY</h1>
             <h4 className="hasfour">~ Alătură-te prietenilor necuvântători ~</h4>
             <hr className="new-horizontal"/>
             <div className="row">
               <div className="col-sm-6">
-                <img src="https://askgramps.org/files/2016/08/pets1.jpg" alt="pets" className="petsimg" />
+                <img src={require("../Images/pets1.jpg")} alt="pets" className="petsimg" />
               </div> 
               <div className="col-sm-6">
                 <h3 className="hastree">Știați că...?</h3>
@@ -54,7 +54,7 @@ import { Button } from 'reactstrap';
                 <Button className="buton-client" color="danger" onClick={this.clientPage}>Caută o gazdă pentru animalul tău de companie</Button>
               </div>
               <div className="col-sm-6">
-                <img src="https://www.dogster.com/wp-content/uploads/2017/10/A-beagle-looking-sick-or-tired.jpg" alt="pets" className="petsimg" />
+                <img src={require("../Images/A-beagle-looking-sick-or-tired.jpg")} alt="pets" className="petsimg" />
               </div>
             </div>
             <hr className="second-horizontal" /> 
