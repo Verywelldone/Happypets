@@ -1,6 +1,6 @@
 import React, {Component} from  "react";
-import "./first-page-style.css";
-import { Container, Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import "./host-page.css";
+import { Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios"
 
 class HostPage extends Component {
@@ -38,8 +38,6 @@ class HostPage extends Component {
         // console.log(this.state.days+ " NUmber of days")
     
     }
-
-      
       handleName(event){
           this.setState({name: event.target.value})
           console.log("name  "+  this.state.name)
@@ -56,8 +54,10 @@ class HostPage extends Component {
 
 render(){
     return(
-       <Container id ="hostPage">
-            <Form className="space">
+    <div className="row">
+       <div className="col-sm-5" id ="hostPage">
+       <h5 className="header-title">Înregistrează-te pentru a găzdui un animal de companie</h5>
+            <Form>
                 <Row form>
                     <Col md={12}>
                         <FormGroup>
@@ -96,10 +96,12 @@ render(){
                 </Col>
                 </Row>
                
-                <Button color="success" onClick={this.saveInDatabase}>Gazduiește!</Button>
+                <Button color="primary" onClick={this.saveInDatabase}>Găzduiește!</Button>
 
             </Form>
-       </Container>
+       </div>
+       <div className="col-sm-7 harta">Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici</div>
+      </div> 
         )
     }
 }
