@@ -1,6 +1,7 @@
 import React from  "react";
 import { Card, Button, CardTitle, CardText, Row, Col, CardImg } from 'reactstrap';
 import "./first-page-style.css";
+import Axios from "axios"
 
 class PrimaPagina extends React.Component { 
     
@@ -11,11 +12,28 @@ class PrimaPagina extends React.Component {
     }
     
     hostPage(){
+        
+      Axios.get("http://localhost:3001/currentSession").then((response)=>{
+        if(response.data.email === "" && response.data.email === ""){
+
+          const path ="/Login";
+          this.props.history.push(path);  
+        }
+      })
+
         const path ="/hostPage";
         this.props.history.push(path);  
     }
     
     clientPage(){
+      
+      Axios.get("http://localhost:3001/currentSession").then((response)=>{
+        if(response.data.email === "" && response.data.email === ""){
+
+          const path ="/Login";
+          this.props.history.push(path);  
+        }
+      })
         const path ="/clientPage";
         this.props.history.push(path);  
     }
