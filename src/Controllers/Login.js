@@ -73,12 +73,12 @@ class Login extends Component {
                           console.log(response);
                           console.log("New session created");
                      })
-                  const  path ="/PrimaPagina";   // Path-ul 
+                  const  path ="/About";   // Path-ul 
                   this.props.history.push(path);
                   return
               }
            }
-           const  path ="/";
+           const  path ="/About";
            alert("User sau email invalid");
           this.props.history.push(path);
           })
