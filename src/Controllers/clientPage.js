@@ -1,6 +1,7 @@
 import React, {Component} from  "react";
+import "./client-page.css";
 
-import { Container, Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios";
 
 class ClientPage extends Component {
@@ -20,8 +21,6 @@ class ClientPage extends Component {
         this.saveDataInDB = this.saveDataInDB.bind(this);
     }
     
-
-        
 
     handleNameChange(event){
         this.setState({name : event.target.value});
@@ -71,66 +70,67 @@ class ClientPage extends Component {
 
     render(){
     return(
-        <Container id ="clientPage">
-        
-            <Form className="space">
-                <Row form>
-                    <Col md={12}>
-                        <FormGroup>
-                            <Label for="nume">Nume complet</Label>
-                            <Input type="text" name="text" id="" placeholder="Popescu Ion"   onChange={event => this.handleNameChange(event)} />
+        <div className="row">
+            <div className="col-sm-5 client-page">
+            <h5 className="header-title">Caută o gazdă pentru animalul tău de companie</h5>
+                <Form>
+                    <Row form>
+                        <Col md={12}>
+                            <FormGroup>
+                                <Label for="nume">Numele tău:</Label>
+                                <Input type="text" name="text" id="" placeholder="Popescu Ion"   onChange={event => this.handleNameChange(event)} />
+                            </FormGroup>
+                        </Col>
+                    </Row>
+                    <FormGroup>
+                    <legend className="col-form-label">Animal de companie:</legend>
+                    <Col sm={12}>
+                        <FormGroup check>
+                            <Label check>
+                            <Input type="radio" name="radio2" value ="mica" onChange={event => this.animalTypeChange(event)}/>
+                            Animal de companie de talie mică
+                            </Label>
+                        </FormGroup>
+
+                        <FormGroup check>
+                            <Label check>
+                            <Input type="radio" name="radio2" value="medie" onChange={event => this.animalTypeChange(event)}/>
+                            Animal de companie de talie medie
+                            </Label>
+                        </FormGroup>
+
+                        <FormGroup check>
+                            <Label check>
+                            <Input type="radio" name="radio2" value="mare" onChange={event => this.animalTypeChange(event)}/>
+                            Animal de companie de talie mare
+                            </Label>
                         </FormGroup>
                     </Col>
-                </Row>
-                <FormGroup>
-                <legend className="col-form-label">Animal de companie</legend>
-                <Col sm={12}>
-                    <FormGroup check>
-                        <Label check>
-                        <Input type="radio" name="radio2" value ="mica" onChange={event => this.animalTypeChange(event)}/>
-                        Câine de talie mică
-                        </Label>
                     </FormGroup>
-
-                    <FormGroup check>
-                        <Label check>
-                        <Input type="radio" name="radio2" value="medie" onChange={event => this.animalTypeChange(event)}/>
-                        Câine de talie medie
-                        </Label>
+                    <FormGroup row>
+                        <Label for="exampleSelect" sm={4}>Alege nr de zile</Label>
+                        <Col sm={8}>
+                        <Input type="select" name="select" placeholder="Select number of days" id="exampleSelect" onChange={event => this.numberOfDaysChange(event)}>
+                            <option>1 zi</option>
+                            <option>2 zile</option>
+                            <option>3 zile</option>
+                            <option>4 zile</option>
+                            <option>5 zile</option>
+                        </Input>
+                        </Col>
                     </FormGroup>
-
-                    <FormGroup check>
-                        <Label check>
-                        <Input type="radio" name="radio2" value="mare" onChange={event => this.animalTypeChange(event)}/>
-                        Câine de talie mare
-                        </Label>
+                    <FormGroup row>
+                        <Label for="exampleText" sm={4}>Lăsa un comentariu</Label>
+                        <Col sm={8}>
+                        <Input type="textarea" name="text" id="exampleText"  onChange={event => this.handleComments(event)} />
+                        </Col>
                     </FormGroup>
-                </Col>
-                </FormGroup>
-                <FormGroup row>
-                    <Label for="exampleSelect" sm={4}>Alege nr de zile</Label>
-                    <Col sm={8}>
-                    <Input type="select" name="select" placeholder="Select number of days" id="exampleSelect" onChange={event => this.numberOfDaysChange(event)}>
-
-                        <option>1 zi</option>
-                        <option>2 zile</option>
-                        <option>3 zile</option>
-                        <option>4 zile</option>
-                        <option>5 zile</option>
-                    </Input>
-                    </Col>
-                </FormGroup>
-                <FormGroup row>
-                    <Label for="exampleText" sm={4}>Lăsa un comentariu</Label>
-                    <Col sm={8}>
-                    <Input type="textarea" name="text" id="exampleText"  onChange={event => this.handleComments(event)} />
-                    </Col>
-                </FormGroup>
-                <Button color="danger" onClick={this.saveDataInDB}>Caută o gazdă</Button>
-                
-            </Form>
-            
-        </Container>
+                    <Button color="danger" onClick={this.saveDataInDB}>Caută o gazdă</Button>
+                    
+                </Form>
+            </div> 
+            <div className="col-sm-7 harta-gazdelor">AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA</div>   
+        </div>
     )
     }
 }
