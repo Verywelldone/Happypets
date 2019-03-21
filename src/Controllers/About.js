@@ -25,6 +25,7 @@ class PrimaPagina extends React.Component {
         this.props.history.push(path);  
     }
     
+
     clientPage(){
       
       Axios.get("http://localhost:3001/currentSession").then((response)=>{
@@ -34,8 +35,7 @@ class PrimaPagina extends React.Component {
           this.props.history.push(path);  
         }
       })
-        const path ="/clientPage";
-        this.props.history.push(path);  
+        
     }
 
     render() {
@@ -50,7 +50,8 @@ class PrimaPagina extends React.Component {
                   <CardText><li>Tu alegi talia animalului pe care îl găzduiești</li></CardText>
                   <CardText><li>Câștigi bani cu ușurință</li></CardText>
                   <CardText><li>Îți anunți disponibilitatea în momentul înregistrării</li></CardText>
-                  <CardImg top width="100%" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" alt="Poza cu animale" /> <br/>
+                  {/* poza de mai jos trebuie schimbata */}
+                {/*   <CardImg top width="100%" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" alt="Poza cu animale" /> <br/> */}
                   <CardText><li>Daca esti un iubitor de animale, nu mai astepta, fa primul pas si inregistreaza-te in aplicatie</li></CardText>
                 </Card>
               </Col>

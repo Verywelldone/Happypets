@@ -4,6 +4,7 @@ import About from "../Controllers/About";
 import Host from "../Controllers/hostPage";
 import Client from "../Controllers/clientPage";
 import firstPage from "../Controllers/PrimaPagina"
+import LogOut from "../Controllers/LogOut"
 
 
 const routes = [
@@ -13,7 +14,7 @@ const routes = [
     { path: '/hostPage', component: Host, text:"Host Page", id: 4},
     { path: '/clientPage', component: Client, text:"Client Page", id:5},
     { path: "/", component:firstPage, text:"Main Page", id:6},
-
+    { path: "/", component:LogOut, text:"Log Out", id:7},
 ];
 
 
