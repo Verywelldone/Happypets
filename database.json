@@ -57,12 +57,10 @@
       "password": "test"
     }
   ],
-
   "currentSession": {
     "name": "",
     "email": ""
   },
-
   "clients": [
     {
       "name": "Fatu Bogdan",
