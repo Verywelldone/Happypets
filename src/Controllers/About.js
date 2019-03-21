@@ -9,6 +9,7 @@ class PrimaPagina extends React.Component {
         this.hostPage = this.hostPage.bind(this);
         this.clientPage = this.clientPage.bind(this);
     }
+    
     hostPage(){
         const path ="/hostPage";
         this.props.history.push(path);  
