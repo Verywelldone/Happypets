@@ -12,7 +12,7 @@ const routes = [
     { path: '/About', component: About, text:"About", id:3 },
     { path: '/hostPage', component: Host, text:"Host Page", id: 4},
     { path: '/clientPage', component: Client, text:"Client Page", id:5},
-    { path: "/", component:firstPage, text:"Main Page", id:6},
+    { path: "/PrimaPagina", component: firstPage, text:"Main Page", id:6},
 
 ];
 
