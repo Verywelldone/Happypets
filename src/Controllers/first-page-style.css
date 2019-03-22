@@ -61,12 +61,13 @@
     border: 1px solid #ddd;
     margin: 15px;
     padding: 10px;
-    background-color: #ff7f27;
-    color: #fff;
+    background-color: #a3e2b1;
     font-weight: bolder;
 }
 
 .fa-check, .fa-info-circle, .fa-house-damage {
     margin-right: 20px;
 }
+
+
 

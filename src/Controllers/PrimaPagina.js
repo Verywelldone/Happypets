@@ -87,7 +87,7 @@ import Axios from "axios"
                 <li>Contact</li>
               </ul>
               <ul className="footer-ul">
-                <li>Contactează-ne:</li>
+                <li><strong>Contactează-ne:</strong></li>
                 <li>Adresa: str. Hărmanului nr 13</li>
                 <li>Brașov, România</li>
               </ul>

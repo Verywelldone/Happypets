@@ -1,5 +1,5 @@
 import React from  "react";
-import { Card, Button, CardBody, CardText, Row, Col, CardImg } from 'reactstrap';
+import { Button } from 'reactstrap';
 import "./first-page-style.css";
 import Axios from "axios"
 
@@ -62,6 +62,30 @@ class PrimaPagina extends React.Component {
             <div className="div-text"><i className="fas fa-info-circle fa-2x"></i>În orice moment poți solicita informații despre animalul tău de companie</div>
             <div className="div-text"><i className="fas fa-house-damage fa-2x"></i>Animalul tău de companie se va simți ca acasă </div>
           </div>
+          <Button color="danger" onClick={this.clientPage}>Rezervă o gazdă HAPPY PUPPY!</Button>
+
+
+
+          <hr className="second-horizontal" /> 
+          <footer id="first-footer">
+            <ul className="footer-ul">
+              <li>Despre noi</li>
+              <li>Întrebări frecvente</li>
+              <li>Contact</li>
+            </ul>
+            <ul className="footer-ul">
+              <li><strong>Contactează-ne:</strong></li>
+              <li>Adresa: str. Hărmanului nr 13</li>
+              <li>Brașov, România</li>
+            </ul>
+            <ul className="footer-ul">
+              <li><i className="fab fa-facebook-square fa-2x"></i></li>
+            </ul>
+            <ul className="footer-ul">
+              <li><i className="fas fa-envelope"></i> happy@puppy.com</li>
+              <li><i className="fas fa-phone"></i> 004 0740147852</li>
+            </ul>
+          </footer>
         </>
         );
         } 
