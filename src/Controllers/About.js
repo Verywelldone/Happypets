@@ -1,5 +1,5 @@
 import React from  "react";
-import { Card, Button, CardTitle, CardText, Row, Col, CardImg } from 'reactstrap';
+import { Card, Button, CardBody, CardText, Row, Col, CardImg } from 'reactstrap';
 import "./first-page-style.css";
 import Axios from "axios"
 
@@ -46,7 +46,7 @@ class PrimaPagina extends React.Component {
               <p className="head-paragraph">Pe lânga <strong>atuurile</strong> pe care ți le aduce aplicația noastră,<br /> iată câteva dintre cele mai importante beneficii ale tale</p>
               <div className="row">
                 <div className="col-sm-5"><img className="image-nice-dog" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" alt="Poza cu animale" /><br />
-                <Button className="under-image" onClick={this.hostPage}>Înscrie-te acum</Button>
+                <Button className="under-image" onClick={this.hostPage}>Înscrie-te și găzduiește</Button>
                 </div>
                 <div className="col-sm-7">
                   <div className="label-container"><span>Iti stabilesti singur programul de lucru</span></div>
@@ -55,6 +55,12 @@ class PrimaPagina extends React.Component {
                   <div className="label-container-right"><span>Tu iti alegi animalul de companie pe care sa il gazduiesti</span></div>
                 </div>
               </div>
+          </div>
+          <div className="second-part">
+            <h2 className="line-title">ESTE SIGUR SĂ ÎMI LAS ANIMALUL DE COMPANIE ÎN GRIJA UNEI PERSOANE STRĂINE?</h2>
+            <div className="div-text">Toate gazdele sunt verificate de specialiștii noștri</div>
+            <div className="div-text">În orice moment poți solicita informații despre animalul tău de companie</div>
+            
           </div>
         </>
         );

@@ -47,5 +47,22 @@
 
 .under-image {
     margin-top: 20px;
-
+    width: 100%;
+    background-color: #963f06;
+    border: #963f06;
+    font-weight: bolder;
 }
+
+.under-image:hover {
+    background-color: #ff7f27; 
+}
+
+.div-text {
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 10px;
+    background-color: #ff7f27;
+    color: #fff;
+    
+}
+
