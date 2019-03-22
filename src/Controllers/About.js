@@ -40,6 +40,7 @@ class PrimaPagina extends React.Component {
 
     render() {
         return (
+<<<<<<< HEAD
           <div id="">
             <Row>
               <Col sm="6">
@@ -91,6 +92,25 @@ class PrimaPagina extends React.Component {
              
             </footer> 
         </div>
+=======
+        <>
+          <div className="first-page-container">
+              <h1 className="line-title">DE CE SĂ TE ÎNREGISTREZI ÎN APLICAȚIA HAPPY PUPPY?</h1>
+              <p className="head-paragraph">Pe lânga <strong>atuurile</strong> pe care ți le aduce aplicația noastră,<br /> iată câteva dintre cele mai importante beneficii ale tale</p>
+              <div className="row">
+                <div className="col-sm-5"><img className="image-nice-dog" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi" alt="Poza cu animale" /><br />
+                <Button className="under-image" onClick={this.hostPage}>Înscrie-te acum</Button>
+                </div>
+                <div className="col-sm-7">
+                  <div className="label-container"><span>Iti stabilesti singur programul de lucru</span></div>
+                  <div className="label-container-right"><span>Iti anunti disponibilitatea in momentul inregistrarii</span></div>
+                  <div className="label-container"><span>Castigi bani cu usurinta</span></div>
+                  <div className="label-container-right"><span>Tu iti alegi animalul de companie pe care sa il gazduiesti</span></div>
+                </div>
+              </div>
+          </div>
+        </>
+>>>>>>> fb8c9e90e26c77fc12961c8784319ff2e3ba1b7c
         );
         } 
           
