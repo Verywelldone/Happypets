@@ -58,9 +58,9 @@ class PrimaPagina extends React.Component {
           </div>
           <div className="second-part">
             <h2 className="line-title">ESTE SIGUR SĂ ÎMI LAS ANIMALUL DE COMPANIE ÎN GRIJA UNEI PERSOANE STRĂINE?</h2>
-            <div className="div-text">Toate gazdele sunt verificate de specialiștii noștri</div>
-            <div className="div-text">În orice moment poți solicita informații despre animalul tău de companie</div>
-            
+            <div className="div-text"><i className="fas fa-check fa-2x"></i>Toate gazdele sunt verificate de specialiștii noștri</div>
+            <div className="div-text"><i className="fas fa-info-circle fa-2x"></i>În orice moment poți solicita informații despre animalul tău de companie</div>
+            <div className="div-text"><i className="fas fa-house-damage fa-2x"></i>Animalul tău de companie se va simți ca acasă </div>
           </div>
         </>
         );
