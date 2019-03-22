@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import routes from "../shared/routes"
-import Axios from 'axios';
+// import Axios from 'axios';
 
 
 class NavBar extends Component {
     constructor(props) {
         super(props);
     
-        this.toggleNavbar = this.toggleNavbar.bind(this);
-        this.logOut = this.logOut.bind(this);
+    
         this.state = {
           collapsed: true
         };
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+
       }
     
       toggleNavbar() {
@@ -21,13 +22,9 @@ class NavBar extends Component {
           collapsed: !this.state.collapsed
         });
       }
+      
+    
 
-      logOut = () => {
-         Axios.patch("http://localhost:3001/currentSession",{
-           name:"",
-           email:""
-         })
-      }
       render() {
         return (
           <div>
@@ -39,6 +36,7 @@ class NavBar extends Component {
                      { routes.map(route => <li key={route.id}><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
                     <Button outline color="success" size="sm" onClick={this.logOut}>LogOut</Button>
                 </Nav>
+          
               </Collapse>
             </Navbar>
           </div>

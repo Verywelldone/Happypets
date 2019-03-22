@@ -11,7 +11,7 @@
       "id": "2",
       "name": "Vraja Marius",
       "address": "Adresa 2",
-      "email": "VrajaMarius@gmail.com",
+      "email": "vrajavalentin@gmail.com",
       "password": "marius"
     },
     {
@@ -58,8 +58,8 @@
     }
   ],
   "currentSession": {
-    "name": "Bogdan Fatu",
-    "email": "ionutbogdan11@gmail.com"
+    "name": "Vraja Marius",
+    "email": "vrajavalentin@gmail.com"
   },
   "clients": [
     {

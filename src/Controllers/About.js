@@ -25,6 +25,7 @@ class PrimaPagina extends React.Component {
         this.props.history.push(path);  
     }
     
+
     clientPage(){
       
       Axios.get("http://localhost:3001/currentSession").then((response)=>{
@@ -34,8 +35,7 @@ class PrimaPagina extends React.Component {
           this.props.history.push(path);  
         }
       })
-        const path ="/clientPage";
-        this.props.history.push(path);  
+        
     }
 
     render() {

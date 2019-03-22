@@ -78,9 +78,11 @@ class Login extends Component {
                   return
               }
            }
-           const  path ="/About";
+           function closeIt() {
+             return ;
+          }
            alert("User sau email invalid");
-          this.props.history.push(path);
+          this.props.history.push(closeIt);
           })
         }
       
