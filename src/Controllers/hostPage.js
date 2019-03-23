@@ -2,6 +2,7 @@ import React, {Component} from  "react";
 import "./host-page.css";
 import { Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios"
+import MapAPI from "./MapAPI"
 
 class HostPage extends Component {
     constructor (props) {
@@ -100,7 +101,10 @@ render(){
 
             </Form>
        </div>
-       <div className="col-sm-7 harta">Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici</div>
+       <div className="col-sm-7 harta">Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici
+       <MapAPI/>
+       </div>
+       
       </div> 
         )
     }
