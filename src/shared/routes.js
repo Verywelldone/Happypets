@@ -14,6 +14,7 @@ const routes = [
     { path: '/hostPage', component: Host, text:"Host Page", id: 4},
     { path: '/clientPage', component: Client, text:"Client Page", id:5},
     { path: '/', component:firstPage, text:"", id:6}, //pagina Main Page 
+    { path: '/PrimaPagina', component: firstPage, text:"", id:7},
 
 ];
 
