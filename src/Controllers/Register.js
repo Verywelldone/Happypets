@@ -69,7 +69,12 @@ class Register extends Component {
                     password:this.state.password,
                     
                 }).then((response)=>{
-                  console.log(response);
+                        Axios.patch("http://localhost:3001/currentSession",{
+                        name:this.state.name,
+                        email:this.state.email
+                    });
+                  
+                    console.log(response);
                   console.log("New account created.");
              })
             
@@ -93,8 +98,7 @@ class Register extends Component {
     }
        createAcount(){
         //    this.formData();
-            this.test();
-
+           this.test(); 
                 const  path ="/";   // Path-ul 
            this.props.history.push(path);  /// redirect catre path
        }

@@ -55,11 +55,25 @@
       "address": "marius",
       "email": "marius.valentin.v@gmail.com",
       "password": "test"
+    },
+    {
+      "id": "9",
+      "name": "Test Redirect",
+      "address": "Test Redirect",
+      "email": "redirect@redirect.com",
+      "password": "1234"
+    },
+    {
+      "id": "10",
+      "name": "Sesiune Test",
+      "address": "Sesiune",
+      "email": "ses@ses.com",
+      "password": "1234"
     }
   ],
   "currentSession": {
-    "name": "Bogdan Fatu",
-    "email": "ionutbogdan11@gmail.com"
+    "name": "",
+    "email": ""
   },
   "clients": [
     {
