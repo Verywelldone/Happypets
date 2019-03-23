@@ -3,6 +3,7 @@ import "./client-page.css";
 
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios";
+import MapAPI from "./MapAPI"
 
 class ClientPage extends Component {
 
@@ -129,7 +130,9 @@ class ClientPage extends Component {
                     
                 </Form>
             </div> 
-            <div className="col-sm-7 harta-gazdelor">AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA</div>   
+            <div className="col-sm-7 harta-gazdelor">AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA
+                    <MapAPI/>
+            </div>   
         </div>
     )
     }
