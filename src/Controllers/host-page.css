@@ -10,4 +10,6 @@
 .harta {
     border-left: 4px dashed green;
     margin-left: 20px;
+    display: block;
 }
+
