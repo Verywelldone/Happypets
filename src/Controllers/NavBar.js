@@ -52,9 +52,7 @@ class NavBar extends Component {
                     <Button outline color="success" size="sm" onClick={this.logOut}>LogOut</Button>
                    </Link>  
                    </li>
-                  
-                  
-               
+                
                 </Nav>
               </Collapse>
             </Navbar>
