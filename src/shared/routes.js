@@ -8,12 +8,12 @@ import firstPage from "../Controllers/PrimaPagina"
 
 
 const routes = [
-    { path: '/Login', component: Login , text:"Log in" ,id:1 },    
-    { path: '/Register', component: Register , text:"Register", id:2},
-    { path: '/About', component: About, text:"About", id:3 },
+    { path: '/About', component: About, text:"Despre noi", id:3 },
+    { path: '/Login', component: Login , text:"Contul meu" ,id:1 },    
+    { path: '/Register', component: Register , text:"Cont nou", id:2},
     { path: '/hostPage', component: Host, text:"Host Page", id: 4},
     { path: '/clientPage', component: Client, text:"Client Page", id:5},
-    { path: '/', component:firstPage, text:"", id:6},
+    { path: '/', component:firstPage, text:"", id:6}, //pagina Main Page 
 
 ];
 

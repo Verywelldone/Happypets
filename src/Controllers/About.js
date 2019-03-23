@@ -49,10 +49,10 @@ class PrimaPagina extends React.Component {
                 <Button className="under-image" onClick={this.hostPage}>Înscrie-te și găzduiește</Button>
                 </div>
                 <div className="col-sm-7">
-                  <div className="label-container"><span>Iti stabilesti singur programul de lucru</span></div>
-                  <div className="label-container-right"><span>Iti anunti disponibilitatea in momentul inregistrarii</span></div>
-                  <div className="label-container"><span>Castigi bani cu usurinta</span></div>
-                  <div className="label-container-right"><span>Tu iti alegi animalul de companie pe care sa il gazduiesti</span></div>
+                  <div className="label-container"><span>Îți stabilești singur programul de lucru</span></div>
+                  <div className="label-container-right"><span>Îți anunți disponibilitatea în momentul înregistrării</span></div>
+                  <div className="label-container"><span>Câștigi bani cu ușurință</span></div>
+                  <div className="label-container-right"><span>Tu îți alegi animalul de companie pe care să îl găzduiești</span></div>
                 </div>
               </div>
           </div>
