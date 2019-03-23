@@ -36,7 +36,6 @@ class NavBar extends Component {
                      { routes.map(route => <li key={route.id}><Link to={route.path} className="nav-link"> {route.text} </Link></li>)}
                     <Button outline color="success" size="sm" onClick={this.logOut}>LogOut</Button>
                 </Nav>
-          
               </Collapse>
             </Navbar>
           </div>

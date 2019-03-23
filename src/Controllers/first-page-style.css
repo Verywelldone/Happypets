@@ -69,5 +69,24 @@
     margin-right: 20px;
 }
 
+.third-line {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.schema-div {
+    text-align: center;
+    color: #178273;
+}
+
+.text-schema-div {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
 
 
