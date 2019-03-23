@@ -63,6 +63,17 @@ class PrimaPagina extends React.Component {
             <div className="div-text"><i className="fas fa-house-damage fa-2x"></i>Animalul tău de companie se va simți ca acasă </div>
           </div>
           <Button color="danger" onClick={this.clientPage}>Rezervă o gazdă HAPPY PUPPY!</Button>
+          <h3 className="third-line">Suntem oamenii care avem grijă de animalele voastre ca și când ar fi ale noastre</h3>
+          <div className="row schema-div">
+            <div className="col-md-4"><i className="fas fa-search-location fa-4x"></i></div>
+            <div className="col-md-4"><i className="fas fa-laptop fa-4x"></i></div>
+            <div className="col-md-4"><i className="fas fa-shield-alt fa-4x"></i></div>
+          </div>
+          <div className="row text-schema-div">
+          <div className="col-md-4"><strong>Caută<br /></strong>Citește recenziile și alege gazda perfectă</div>
+            <div className="col-md-4"><strong>Rezervă<br /></strong>Rezervă în siguranță prin intermediul aplicației</div>
+            <div className="col-md-4"><strong>Relaxează-te<br /></strong>Îți oferim suport 24/7, garanție și securitate</div>
+          </div>
 
 
 

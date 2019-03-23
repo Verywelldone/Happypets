@@ -56,7 +56,6 @@ class NavBar extends Component {
                   
                
                 </Nav>
-          
               </Collapse>
             </Navbar>
           </div>
