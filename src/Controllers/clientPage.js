@@ -130,7 +130,7 @@ class ClientPage extends Component {
                     
                 </Form>
             </div> 
-            <div className="col-sm-7 harta-gazdelor">AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA
+            <div className="col-sm-7 harta-gazdelor">{/*AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA*/}
                     <MapAPI/>
             </div>   
         </div>

@@ -101,10 +101,10 @@ render(){
 
             </Form>
        </div>
-       <div className="col-sm-7 harta">Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici
+       <div className="col-sm-7 harta">{/* Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici*/}
        <MapAPI/>
        </div>
-       
+        
       </div> 
         )
     }
