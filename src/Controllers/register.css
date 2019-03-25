@@ -18,3 +18,10 @@
 .buton-register:hover {
     background-color: #046824;
 }
+
+.footer-register {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    cursor: pointer;
+}

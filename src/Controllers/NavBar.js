@@ -15,6 +15,7 @@ class NavBar extends Component {
         this.state = {
           collapsed: true
         };
+
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.logOut=this.logOut.bind(this);
 
@@ -35,7 +36,6 @@ class NavBar extends Component {
           console.log("Current Session Cleared")
        })
       }
-      
     
 
       render() {

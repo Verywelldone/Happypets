@@ -146,7 +146,11 @@ class Register extends Component {
                       
                 </Form>
             </Container>
-                <br />
+            <footer className="footer-register">
+                <span>Date cu caracter personal |</span>
+                <span> Politica de cookieuri |</span>
+                <span> Politica de confidențialitate</span>
+            </footer>
             </div>
         
        
