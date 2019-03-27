@@ -8,57 +8,71 @@ import Axios from 'axios';
 
 
 class NavBar extends Component {
-    constructor(props) {
-        super(props);
-    
-    
-        this.state = {
-          collapsed: true
-        };
+  constructor(props) {
+    super(props);
 
-        this.toggleNavbar = this.toggleNavbar.bind(this);
-        this.logOut=this.logOut.bind(this);
 
-      }
-    
-      toggleNavbar() {
-        this.setState({
-          collapsed: !this.state.collapsed
-        });
-      }
+    this.state = {
+      collapsed: true,
+      name: "",
+      email: ""
+    };
 
-      logOut() {   
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.logOut = this.logOut.bind(this);
 
-       Axios.patch("http://localhost:3001/currentSession",{
-         "name":"",
-         email:""
-       }).then(()=>{
-          console.log("Current Session Cleared")
-       })
-      }
-    
+  }
 
-      render() {
-        return (
-          <div>
-            <Navbar color="light" light expand="md" fixed="top">
-              <NavbarBrand href="/" className="mr-auto">HAPPY PUPPY</NavbarBrand>
-              <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-              <Collapse isOpen={!this.state.collapsed} navbar>
-                <Nav navbar className="ml-auto">
-                     { routes.map(route => <li key={route.id}><Link to={route.path} className="nav-link"> {route.text}</Link></li>)}
-                  <li>
-                  <Link to ="/About"> 
-                    <Button outline color="success" size="sm" onClick={this.logOut}>LogOut</Button>
-                   </Link>  
-                   </li>
-                
-                </Nav>
-              </Collapse>
-            </Navbar>
-          </div>
-        );
-      }
-    }
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
+
+  logOut() {
+
+    Axios.patch("http://localhost:3001/currentSession", {
+      "name": "",
+      email: ""
+    }).then(() => {
+      console.log("Current Session Cleared")
+    })
+  }
+
+  isLogged() {
+    Axios.get("http://localhost:3001/currentSession").then((respond) => {
+      this.setState({ name: respond.data.name, email: respond.data.email })
+    })
+
+  }
+
+  render() {
+    return (
+      <div>
+        <Navbar color="light" light expand="md" fixed="top">
+          <NavbarBrand href="/" className="mr-auto">HAPPY PUPPY</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar className="ml-auto">
+              {routes.map(route => {
+                if (this.state.name !== "" || !route.authRequired) {
+                  return <li key={route.id}> <Link to={route.path} className="nav-link"> {route.text}</Link></li>
+                }
+              })
+              }
+              <li>
+
+                <Link to="/About">
+                  <Button outline color="success" size="sm" onClick={this.logOut}>LogOut</Button>
+                </Link>
+              </li>
+
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
+}
 
 export default NavBar

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
- 
+
 const AnyReactComponent = ({ text }) => (
- 
+
   <div style={{
-    color: 'white', 
+    color: 'white',
     background: 'grey',
     padding: '15px 10px',
     display: 'inline-flex',
@@ -18,14 +18,14 @@ const AnyReactComponent = ({ text }) => (
   </div>
 );
 class SimpleMap extends Component {
- 
-  constructor(props){
+
+  constructor(props) {
     super(props)
-    this.state ={
+    this.state = {
       "key": "AIzaSyCS-nM5E7swe1c9BWgIhipBeqA14kWWkDI"
     }
   }
- 
+
   static defaultProps = {
     center: {
       lat: 45.64,
@@ -33,22 +33,23 @@ class SimpleMap extends Component {
     },
     zoom: 13
   };
- 
+
   render() {
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '75vh', width: '100%' }}>
         <GoogleMapReact
-        bootstrapURLKeys={{ key:'AIzaSyBmFPKtqmN4mC_yOi1v7THSdXWlx4sqtP8'}}
+          bootstrapURLKeys={{ key: 'AIzaSyBmFPKtqmN4mC_yOi1v7THSdXWlx4sqtP8' }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent  lat={45.64}   lng={25.615}   text={'Fatu Bogdan'}/>
-          <AnyReactComponent  lat={45.6599}   lng={25.6033}   text={'Paul'}/>
+          <AnyReactComponent lat={45.64} lng={25.615} text={'Fatu Bogdan'} />
+          <AnyReactComponent lat={45.6599} lng={25.6033} text={'Paul'} />
+          <AnyReactComponent lat={45.8599} lng={25.3033} text={'Paula'} />
         </GoogleMapReact>
       </div>
     );
   }
 }
- 
+
 export default SimpleMap;

@@ -6,7 +6,7 @@
 }
 
 .first-page-container {
-    background-color:#EFF5FE;
+    background-color: #EFF5FE;
     padding: 10px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .under-image:hover {
-    background-color: #ff7f27; 
+    background-color: #ff7f27;
 }
 
 .div-text {
@@ -65,7 +65,9 @@
     font-weight: bolder;
 }
 
-.fa-check, .fa-info-circle, .fa-house-damage {
+.fa-check,
+.fa-info-circle,
+.fa-house-damage {
     margin-right: 20px;
 }
 
@@ -88,5 +90,3 @@
     margin-top: 30px;
     margin-bottom: 70px;
 }
-
-
