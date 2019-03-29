@@ -3,6 +3,7 @@ import "./host-page.css";
 import { Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios"
 import MapAPI from "./MapAPI"
+import { exists } from "fs";
 
 class HostPage extends Component {
     constructor(props) {
@@ -20,11 +21,16 @@ class HostPage extends Component {
     }
 
     saveInDatabase() {
+        var objMap = this.refs.the_map;
+        this.state.lat = objMap.state.lat;
+        this.state.lng = objMap.state.lng;
         axios.post("http://localhost:3001/hosts", {
             name: this.state.name,
             address: this.state.address,
             phone: this.state.phone,
-            days: this.state.days
+            days: this.state.days,
+            lat: this.state.lat,
+            lng: this.state.lng
         }).then(respond => {
             console.log(respond);
 
@@ -102,7 +108,7 @@ class HostPage extends Component {
                     </Form>
                 </div>
                 <div className="col-sm-7 harta">{/* Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici*/}
-                    <MapAPI />
+                    <MapAPI ref="the_map" />
                 </div>
 
             </div>

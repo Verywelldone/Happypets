@@ -72,8 +72,8 @@
     }
   ],
   "currentSession": {
-    "name": "Bogdan Fatu",
-    "email": "ionutbogdan11@gmail.com"
+    "name": "Natalia Pivoda",
+    "email": "NataliaPivoda@gmail.com"
   },
   "clients": [
     {
@@ -89,36 +89,51 @@
       "daysNumber": "3 zile",
       "comments": "kjhkjkl",
       "id": 2
+    },
+    {
+      "name": "Clienteanu Ion",
+      "animal": "mica",
+      "daysNumber": "3 zile",
+      "comments": "dddd",
+      "id": 3
     }
   ],
   "hosts": [
     {
-      "name": "Fatu Bogdan",
-      "address": "Str. Panait Cerna nr. 1",
-      "phone": "0770151351",
-      "days": "1",
-      "id": 1
-    },
-    {
-      "name": "Marius",
-      "address": "adresa 1 ",
-      "phone": "021423512123",
-      "days": "3",
-      "id": 2
-    },
-    {
       "name": "Natalia",
-      "address": "adresa 12",
-      "phone": "012552121341",
-      "days": "5",
-      "id": 3
+      "address": "Republicii",
+      "phone": "0742426833",
+      "days": "4",
+      "lat": 45.65125888097665,
+      "lng": 25.573837251309328,
+      "id": 8
     },
     {
-      "name": "Paul",
-      "address": "adresa 123",
-      "phone": "09423532453",
-      "days": "",
-      "id": 4
+      "name": "ion",
+      "address": "gngfnf",
+      "phone": "0742426833",
+      "days": "3",
+      "lat": 45.638548835779766,
+      "lng": 25.606109590176516,
+      "id": 9
+    },
+    {
+      "name": "assa",
+      "address": "rrr",
+      "phone": "0742426833",
+      "days": "4",
+      "lat": 45.65209884247526,
+      "lng": 25.56456753695386,
+      "id": 12
+    },
+    {
+      "name": "Centrul Civic",
+      "address": "ccc",
+      "phone": "0742426833",
+      "days": "4",
+      "lat": 45.65317877446324,
+      "lng": 25.610916108731203,
+      "id": 13
     }
   ]
 }

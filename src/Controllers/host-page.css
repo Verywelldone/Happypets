@@ -1,13 +1,11 @@
 #hostPage {
     margin-top: 80px;
     width: 60%;
-    margin-left: -100px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 .harta {
-    margin-left: 20px;
     margin-top: 80px;
 }
