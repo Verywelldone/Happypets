@@ -22,7 +22,7 @@ class SimpleMap extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      "key": "AIzaSyCS-nM5E7swe1c9BWgIhipBeqA14kWWkDI"
+      // "key": "AIzaSyCS-nM5E7swe1c9BWgIhipBeqA14kWWkDI"
     }
   }
 
