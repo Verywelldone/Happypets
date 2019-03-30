@@ -8,7 +8,7 @@ import {
   Button, FormFeedback
 } from 'reactstrap';
 
-import isLogged from "../shared/LogContext"
+// import isLogged from "../shared/LogContext"
 import Axios from "axios";
 
 class Login extends Component {

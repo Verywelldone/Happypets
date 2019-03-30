@@ -76,11 +76,18 @@
       "address": "adresa mea",
       "email": "nat_nat@yahoo.com",
       "password": "789654"
+    },
+    {
+      "id": "12",
+      "name": "Natalia ",
+      "address": "adresa mea",
+      "email": "natalia@scoalainformala.ro",
+      "password": "123456"
     }
   ],
   "currentSession": {
-    "name": "Nat Nat",
-    "email": "nat_nat@yahoo.com"
+    "name": "",
+    "email": ""
   },
   "clients": [
     {
@@ -159,6 +166,15 @@
       "lat": 45.64096219328322,
       "lng": 25.607910077984002,
       "id": 18
+    },
+    {
+      "name": "Natalia",
+      "address": "aaaaaa",
+      "phone": "0740123456",
+      "days": "1",
+      "lat": 45.64674642927053,
+      "lng": 25.60157226168087,
+      "id": 19
     }
   ]
 }
