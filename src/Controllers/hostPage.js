@@ -34,7 +34,7 @@ class HostPage extends Component {
         }).then(respond => {
             console.log(respond);
 
-            const path = "/PrimaPagina";   // Path-ul 
+            const path = "/thank-you";   // Path-ul 
             this.props.history.push(path);  /// redirect catre path
         })
 
@@ -103,7 +103,7 @@ class HostPage extends Component {
                             </Col>
                         </Row>
 
-                        <Button color="primary" onClick={this.Thanks}>Găzduiește!</Button>
+                        <Button color="primary" onClick={this.saveInDatabase}>Găzduiește!</Button>
 
                     </Form>
                 </div>

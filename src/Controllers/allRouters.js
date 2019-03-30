@@ -6,6 +6,7 @@ import Register from "./Register"
 import PrimaPagina from "./PrimaPagina"
 import Host from "./hostPage"
 import Client from "./clientPage"
+import Thanks from "./Thanks"
 
 
 
@@ -21,6 +22,7 @@ class allRouters extends React.Component{
                         <Route exact path='/PrimaPagina' component={PrimaPagina} />
                         <Route exact path='/hostPage' component={Host} />
                         <Route exact path='/clientPage' component={Client} />
+                        <Route exact path='/thank-you' component={Thanks} />
                     </Switch>
                 </div>
             </Router>
