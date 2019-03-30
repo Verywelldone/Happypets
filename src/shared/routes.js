@@ -9,7 +9,7 @@ import Thanks from "../Controllers/thank-you";
 
 
 const routes = [
-    { path: '/About', component: About, text:"Despre noi", id:3,authRequired: true },
+    { path: '/About', component: About, text:"Despre noi", id:3 },
     { path: '/Login', component: Login , text:"Contul meu" ,id:1 },    
     { path: '/Register', component: Register , text:"Cont nou", id:2},
     { path: '/hostPage', component: Host, text:"Host Page", id: 4, authRequired: true},

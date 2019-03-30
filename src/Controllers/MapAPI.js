@@ -55,7 +55,6 @@ class SimpleMap extends Component {
   };
 
   _onClick = ({ lat, lng }) => {
-    alert('Adresa salvata');
     this.setState({
         lat: lat, 
         lng: lng,
@@ -78,11 +77,9 @@ class SimpleMap extends Component {
 
   render() {
     this.getHosts();
-    //alert(this.state.isLoading);
-    // to be removed
-    // this.state.hosts = this.state.hosts_old;
+    
     return (
-      // Important! Always set the container height explicitly
+      
       <div style={{ height: '75vh', width: '100%' }}>
         <GoogleMapReact onClick={this._onClick}
           bootstrapURLKeys={{ key: 'AIzaSyBmFPKtqmN4mC_yOi1v7THSdXWlx4sqtP8' }}

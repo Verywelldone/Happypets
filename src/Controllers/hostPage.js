@@ -26,6 +26,7 @@ class HostPage extends Component {
         const objMap = this.refs.the_map;
         this.state.lat = objMap.state.lat;
         this.state.lng = objMap.state.lng;
+
         axios.post("http://localhost:3001/hosts", {
             name: this.state.name,
             address: this.state.address,
@@ -33,6 +34,7 @@ class HostPage extends Component {
             days: this.state.days,
             lat: this.state.lat,
             lng: this.state.lng
+
         }).then(respond => {
             console.log(respond);
 
@@ -109,7 +111,7 @@ class HostPage extends Component {
 
                     </Form>
                 </div>
-                <div className="col-sm-7 harta">
+                <div className="col-sm-7 harta"><h4> Înainte de a te înregistra, localizează-te pe hartă cu un click pe adresa ta</h4>
                     <MapAPI ref="the_map" />
                 </div>
 

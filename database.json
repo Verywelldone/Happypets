@@ -69,11 +69,18 @@
       "address": "Sesiune",
       "email": "ses@ses.com",
       "password": "1234"
+    },
+    {
+      "id": "11",
+      "name": "Nat Nat",
+      "address": "adresa mea",
+      "email": "nat_nat@yahoo.com",
+      "password": "789654"
     }
   ],
   "currentSession": {
-    "name": "Natalia Pivoda",
-    "email": "NataliaPivoda@gmail.com"
+    "name": "Nat Nat",
+    "email": "nat_nat@yahoo.com"
   },
   "clients": [
     {
@@ -143,6 +150,15 @@
       "lat": 45.65722833303895,
       "lng": 25.588295814255275,
       "id": 17
+    },
+    {
+      "name": "me",
+      "address": "mememe",
+      "phone": "1245258874",
+      "days": "",
+      "lat": 45.64096219328322,
+      "lng": 25.607910077984002,
+      "id": 18
     }
   ]
 }
