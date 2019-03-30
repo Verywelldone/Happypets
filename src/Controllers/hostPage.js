@@ -13,7 +13,9 @@ class HostPage extends Component {
             days: "",
             name: "",
             address: "",
-            phone: ""
+            phone: "",
+            lat: "",
+            lng: ""
         };
 
         this.handleSelected = this.handleSelected.bind(this);
@@ -21,7 +23,7 @@ class HostPage extends Component {
     }
 
     saveInDatabase() {
-        var objMap = this.refs.the_map;
+        const objMap = this.refs.the_map;
         this.state.lat = objMap.state.lat;
         this.state.lng = objMap.state.lng;
         axios.post("http://localhost:3001/hosts", {
@@ -107,7 +109,7 @@ class HostPage extends Component {
 
                     </Form>
                 </div>
-                <div className="col-sm-7 harta">{/* Dupa ce dai click pe GAZDUIESTE, inregistrarea ta se va afisa aici*/}
+                <div className="col-sm-7 harta">
                     <MapAPI ref="the_map" />
                 </div>
 

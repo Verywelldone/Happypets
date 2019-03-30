@@ -109,24 +109,6 @@
       "id": 8
     },
     {
-      "name": "ion",
-      "address": "gngfnf",
-      "phone": "0742426833",
-      "days": "3",
-      "lat": 45.638548835779766,
-      "lng": 25.606109590176516,
-      "id": 9
-    },
-    {
-      "name": "assa",
-      "address": "rrr",
-      "phone": "0742426833",
-      "days": "4",
-      "lat": 45.65209884247526,
-      "lng": 25.56456753695386,
-      "id": 12
-    },
-    {
       "name": "Centrul Civic",
       "address": "ccc",
       "phone": "0742426833",
@@ -154,11 +136,13 @@
       "id": 15
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "days": "",
-      "id": 16
+      "name": "avrram iancu",
+      "address": "asasasa",
+      "phone": "741257",
+      "days": "1",
+      "lat": 45.65722833303895,
+      "lng": 25.588295814255275,
+      "id": 17
     }
   ]
 }
