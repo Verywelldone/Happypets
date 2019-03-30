@@ -77,7 +77,6 @@ class PrimaPagina extends React.Component {
           </div>
 
 
-
           <hr className="second-horizontal" /> 
           <footer id="first-footer">
             <ul className="footer-ul">

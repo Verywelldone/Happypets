@@ -3,7 +3,7 @@ import "./host-page.css";
 import { Col, Row, ButtonGroup, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios"
 import MapAPI from "./MapAPI"
-import { exists } from "fs";
+
 
 class HostPage extends Component {
     constructor(props) {
@@ -103,7 +103,7 @@ class HostPage extends Component {
                             </Col>
                         </Row>
 
-                        <Button color="primary" onClick={this.saveInDatabase}>Găzduiește!</Button>
+                        <Button color="primary" onClick={this.Thanks}>Găzduiește!</Button>
 
                     </Form>
                 </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import Axios from "axios";
 
 const AnyReactComponent = ({ name, phone }) => (
 
@@ -55,7 +54,7 @@ class SimpleMap extends Component {
     zoom: 13
   };
 
-  _onClick = ({x, y, lat, lng, event}) => {
+  _onClick = ({ lat, lng }) => {
     alert('Adresa salvata');
     this.setState({
         lat: lat, 
@@ -65,13 +64,6 @@ class SimpleMap extends Component {
   }
 
   getHosts = () => {
-    /*
-    Axios.get("http://localhost:3001/hosts")
-        .then((response) => {
-          this.setState({ hosts: response.data });
-        })
-    */
-
         fetch("http://localhost:3001/hosts")
         .then(response => response.json())
         .then(data =>
@@ -109,7 +101,7 @@ class SimpleMap extends Component {
             )
         })
         ) : ( 
-          <h3>Loading...</h3>
+          <>Loading...</>
         )} 
 
         </GoogleMapReact>
