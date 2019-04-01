@@ -83,11 +83,25 @@
       "address": "adresa mea",
       "email": "natalia@scoalainformala.ro",
       "password": "123456"
+    },
+    {
+      "id": "13",
+      "name": "",
+      "address": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "14",
+      "name": "eu",
+      "address": "a mea",
+      "email": "aaaaa@bbbb",
+      "password": "123654"
     }
   ],
   "currentSession": {
-    "name": "",
-    "email": ""
+    "name": "eu",
+    "email": "aaaaa@bbbb"
   },
   "clients": [
     {

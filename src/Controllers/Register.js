@@ -130,13 +130,13 @@ class Register extends Component {
                         <Col>
                             <FormGroup>
                                 <Label for="email">Email:</Label>
-                                <Input type="email" placeholder="email@email.com" onChange={event => this.handleEmail(event)} name="email" id="email" />
+                                <Input type="email"  placeholder="email@email.com" onChange={event => this.handleEmail(event)} name="email" id="email" />
                             </FormGroup>
                         </Col>
                         <Col>
                             <FormGroup>
                                 <Label for="password">Introdu o parolă:</Label>
-                                <Input type="password" name="password" placeholder="******" onChange={event => this.handlePassword(event)} id="password" />
+                                <Input type="password" name="password" placeholder="******" required onChange={event => this.handlePassword(event)} id="password" />
                             </FormGroup>
                         </Col>
                         <Col>

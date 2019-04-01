@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./client-page.css";
 
-import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+// import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios";
 import MapAPI from "./MapAPI"
 
@@ -72,9 +72,9 @@ class ClientPage extends Component {
     render() {
         return (
             <div className="row">
-                <div className="col-sm-5 client-page">
+                <div className="col client-page">
                     <h5 className="header-title">Caută o gazdă pentru animalul tău de companie</h5>
-                    <Form>
+                    {/* <Form>
                         <Row form>
                             <Col md={12}>
                                 <FormGroup>
@@ -128,9 +128,9 @@ class ClientPage extends Component {
                         </FormGroup>
                         <Button color="danger" onClick={this.saveDataInDB}>Caută o gazdă</Button>
 
-                    </Form>
+                    </Form> */}
                 </div>
-                <div className="col-sm-7 harta-gazdelor">{/*AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA*/}
+                <div className="col-sm-12 harta-gazdelor">{/*AICI SA APARA HARTA CU GAZDELE INREGISTRATE/ HARTA SA SE AFISEZE DUPA CE DAI CLICK PE CAUTA O GAZDA*/}
                     <MapAPI />
                 </div>
             </div>

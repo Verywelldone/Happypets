@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({ name, phone }) => (
+const AnyReactComponent = ({ name, phone, days }) => (
 
   <div style={{
     color: 'white',
@@ -15,7 +15,8 @@ const AnyReactComponent = ({ name, phone }) => (
     transform: 'translate(-50%, -50%)'
   }}>
     {name}<br/>
-    {phone}
+    {phone}<br/>
+    { 'liber: ' + days + ' zile'}
   </div>
 );
 class SimpleMap extends Component {
@@ -45,6 +46,7 @@ class SimpleMap extends Component {
     };
 
   }
+  
 
   static defaultProps = {
     center: {
@@ -74,6 +76,7 @@ class SimpleMap extends Component {
         .catch(error => this.setState({ error, isLoading: false }));
   
   }
+  
 
   render() {
     this.getHosts();
@@ -94,6 +97,7 @@ class SimpleMap extends Component {
                     lng={marker.lng}
                     name={marker.name}
                     phone={marker.phone}
+                    days={marker.days}
                 />
             )
         })
