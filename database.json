@@ -100,8 +100,8 @@
     }
   ],
   "currentSession": {
-    "name": "eu",
-    "email": "aaaaa@bbbb"
+    "name": "Vraja Marius",
+    "email": "vrajavalentin@gmail.com"
   },
   "clients": [
     {
@@ -189,6 +189,15 @@
       "lat": 45.64674642927053,
       "lng": 25.60157226168087,
       "id": 19
+    },
+    {
+      "name": "Ion Ion",
+      "address": "",
+      "phone": "0740014025",
+      "days": "3",
+      "lat": 45.643641723928035,
+      "lng": 25.59710321426394,
+      "id": 20
     }
   ]
 }

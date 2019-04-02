@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, Button } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import routes from "../shared/routes"
 import Axios from 'axios';
-
-// import Axios from 'axios';
+import routes from "../shared/routes.js"
 
 
 class NavBar extends Component {
@@ -54,17 +52,9 @@ class NavBar extends Component {
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar className="ml-auto">
-              {routes.map(route => {
-                if (this.state.name !== "" || !route.authRequired) {
-                  return <li key={route.id}> <Link to={route.path} className="nav-link"> {route.text}</Link></li>
-                }
-              })
-              }
+            
               <li>
-
-                <Link to="/About">
-                  <Button outline color="success" size="sm" onClick={this.logOut}>LogOut</Button>
-                </Link>
+                <Link to="/" onClick={this.logOut}>Deconectare</Link>
               </li>
 
             </Nav>

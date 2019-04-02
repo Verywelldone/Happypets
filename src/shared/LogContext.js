@@ -1,9 +1,8 @@
 import React from "react";
 
 
-const isLogged  = new React.createContext({
-    user:"",
-    email:""
+const navigationContext  = new React.createContext({
 });
 
-export default isLogged;
+
+export default navigationContext;
